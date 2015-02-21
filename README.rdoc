@@ -1,28 +1,20 @@
-== README
+== Geotix
+Location based ticket selling application. Repo is built with Angular on Rails and uses Postgres for the DB.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== Main Components
+Angular - Client-side framework
 
-Things you may want to cover:
+Google Maps - displaying tickets using angular library(http://angular-ui.github.io/angular-google-maps)
 
-* Ruby version
+Bower - Client-side Dependency manager
 
-* System dependencies
+Rails - Server-side REST API
 
-* Configuration
+== Basic Commands:
+bundle install - install main gems
 
-* Database creation
+rake bower:install - install client-side dependencies
 
-* Database initialization
+rake db:create - create local DB
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+rake db:migrate - migrate any changes to local DB
