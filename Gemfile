@@ -19,6 +19,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'less-rails'
+gem 'therubyracer'
 gem 'angular-rails-templates'
 gem 'angular_rails_csrf'
 gem 'devise', '~> 3.4.0'

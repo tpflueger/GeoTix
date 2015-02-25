@@ -1,0 +1,37 @@
+.navbar {
+    .ui {
+        &.dropdown {
+            &.item {
+            float: right;
+            }
+        }
+    }
+}
+
+
+.panel {
+    &.ui {
+        &.menu {
+            &.vertical {
+                width: 300px !important;
+            }
+        }
+
+        &.sidebar {
+            &.uncover {
+                &.visible {
+                    width: 300px !important;
+                }
+            }
+
+            &.left {
+                &.sidebar {
+                    .pusher {
+                        -webkit-transform: translate3d(300px, 0, 0) !important;
+                        transform: translate3d(300px, 0, 0) !important;
+                    }
+                }
+            }
+        }
+    }
+}
