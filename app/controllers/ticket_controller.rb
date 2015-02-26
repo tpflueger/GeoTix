@@ -5,7 +5,7 @@ class TicketController < ApplicationController
 
   # Return all tickets associated with the current user
   def index
-    respond_with Ticket.find(user: current_user.username)
+    respond_with Ticket.find(user_id: current_user.id)
   end
 
   # Return all tickets
@@ -15,12 +15,12 @@ class TicketController < ApplicationController
 
   # Create a new ticket and send it back to the client
   def create
-    respond_with Ticket.create(ticket_params.merge(user: current_user.username))
+    respond_with Ticket.create(ticket_params.merge(user_id: current_user.id))
   end
 
   # Update a ticket with params sent from the client
   def update
-    ticket = Ticket.find(params[:user_username])
+    ticket = Ticket.find(params[:user_id])
     # add updating here
 
     respond_with ticket
@@ -28,10 +28,10 @@ class TicketController < ApplicationController
 
   # Destroy a ticket
   def destroy
-    ticket = Ticket.find(params[:user_username])
+    ticket = Ticket.find(params[:user_id])
     ticket.destroy
 
-    respond_with Ticket.find(user: current_user.username)
+    respond_with Ticket.find(user: current_user.id)
   end
 
   private
