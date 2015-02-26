@@ -1,0 +1,323 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pan",
+				"pancakes"
+			],
+			[
+				"confir",
+				"confirmation_sent_at"
+			],
+			[
+				"confirmed",
+				"confirmed_at"
+			],
+			[
+				"update",
+				"update_all"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Sites/geotix/app/controllers/ticket_controller.rb",
+		"/C/Sites/geotix/app/models/user.rb",
+		"/C/Sites/geotix/app/assets/javascripts/auth/authCtrl.js",
+		"/C/Sites/geotix/config/routes.rb",
+		"/C/Sites/geotix/app/assets/stylesheets/ticket.scss",
+		"/C/Sites/geotix/app/assets/javascripts/ticket.js",
+		"/C/Sites/geotix/db/migrate/20150226031628_create_tickets.rb",
+		"/C/Sites/geotix/app/helpers/ticket_helper.rb",
+		"/C/Sites/geotix/app/assets/stylesheets/ticket_controller.scss",
+		"/C/Sites/geotix/app/assets/javascripts/ticket_controller.js",
+		"/C/Sites/geotix/app/models/ticket.rb",
+		"/C/Sites/geotix/config/database.yml",
+		"/C/Sites/geotix/db/migrate/20150221225156_add_username_to_user.rb",
+		"/C/Sites/geotix/Gemfile",
+		"/C/Sites/geotix/app/assets/stylesheets/application.css",
+		"/C/Sites/geotix/.gitignore",
+		"/C/Sites/geotix/app/assets/javascripts/route.js",
+		"/C/Sites/geotix/app/assets/stylesheets/common/main.less",
+		"/B/changelogs/current.txt",
+		"/C/Sites/geotix/bower.json",
+		"/C/Sites/tutorials/todo/app/views/layouts/devise.html.haml",
+		"/C/Users/Joseph/OneDrive/UNO/CSCI 3550/Assignments/wireshark/http response.txt",
+		"/C/Users/Joseph/OneDrive/UNO/CSCI 3550/Assignments/wireshark/http request.txt",
+		"/C/Sites/tutorials/todo/heroku.log",
+		"/C/Sites/tutorials/todo/db/migrate/20150223003332_remove_columns_from_users.rb",
+		"/C/Sites/tutorials/todo/.gitignore",
+		"/C/Sites/tutorials/todo/db/migrate/20150223224331_add_remember_created_at_to_user.rb",
+		"/C/Sites/tutorials/todo/app/views/tasks/_task_form.html.haml",
+		"/C/Sites/tutorials/todo/db/migrate/20150222235707_remove_confirms_from_user.rb",
+		"/C/Sites/tutorials/todo/app/assets/javascripts/pages.js.coffee",
+		"/C/Sites/tutorials/todo/Gemfile",
+		"/C/Sites/tutorials/todo/app/views/tasks/_task_list.html.haml",
+		"/C/Sites/tutorials/todo/db/migrate/20150223002808_replace_username_with_email_in_user.rb",
+		"/C/Sites/tutorials/todo/app/controllers/tasks_controller.rb",
+		"/C/Sites/tutorials/todo/app/views/devise/registrations/new.html.haml",
+		"/C/Sites/tutorials/todo/app/views/devise/sessions/new.html.haml",
+		"/C/Sites/tutorials/todo/db/migrate/20150223002052_replace_email_with_username_in_user.rb",
+		"/C/Sites/tutorials/todo/app/views/devise/shared/_links.html.haml",
+		"/C/Sites/tutorials/todo/db/migrate/20150223001126_rename_note_to_details.rb",
+		"/C/Sites/tutorials/todo/app/models/user.rb",
+		"/C/Sites/tutorials/todo/app/assets/stylesheets/application.css.scss",
+		"/C/Sites/tutorials/todo/config/database.yml",
+		"/C/Sites/tutorials/fake_lunch_hub/spec/controllers/groups_controller_spec.rb",
+		"/C/Sites/tutorials/fake_lunch_hub/app/models/group.rb",
+		"/C/Sites/tutorials/fake_lunch_hub/spec/models/group_spec.rb",
+		"/C/Sites/tutorials/fake_lunch_hub/config/routes.rb",
+		"/C/Sites/tutorials/fake_lunch_hub/db/migrate/20150211231507_create_groups.rb",
+		"/C/Sites/tutorials/fake_lunch_hub/config/database.yml",
+		"/C/Sites/tutorials/fake_lunch_hub/Gemfile",
+		"/C/Sites/tutorials/fake_lunch_hub/config/application.rb",
+		"/C/Users/Joseph/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Joseph/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Sites/tutorials/fake_lunch_hub/db/migrate/20150211190332_create_groups.rb",
+		"/C/Sites/tutorials/fake_lunch_hub/.rspec",
+		"/C/Sites/ruby-getting-started/Gemfile",
+		"/C/Sites/tutorials/todo/app/views/pages/home.html.haml",
+		"/C/Sites/tutorials/hello_world/app/views/layouts/application.html.erb",
+		"/C/Sites/ruby-getting-started/config/database.yml",
+		"/C/Sites/tutorials/hello_world/app/views/pages/home.html.erb",
+		"/C/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activerecord-4.1.8/lib/active_record/connection_adapters/postgresql_adapter.rb",
+		"/C/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb",
+		"/C/Sites/tutorials/todo/app/controllers/pages_controller.rb",
+		"/C/Sites/tutorials/todo/app/controllers/application_controller.rb",
+		"/C/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/pg-0.17.1-x86-mingw32/lib/pg.rb",
+		"/C/Recovery.txt",
+		"/C/Sites/todo/.travis.yml",
+		"/C/Ruby193/lib/ruby/1.9.1/rubygems/ssl_certs/ca-bundle.pem",
+		"/C/pik/pik.ps1",
+		"/C/pik/pik.bat",
+		"/C/Ruby193/devkit/config.yml",
+		"/C/Ruby193/lib/ruby/gems/1.9.1/extensions/x86-mingw32/1.9.1/json-1.8.2/gem_make.out",
+		"/C/Ruby193/lib/ruby/gems/1.9.1/gems/json-1.8.2/ext/json/ext/generator/Makefile",
+		"/C/Ruby193/lib/ruby/1.9.1/rubygems/remote_fetcher.rb",
+		"/C/Sites/tutorials/todo/app/views/tasks/hide_form.js.erb",
+		"/C/Sites/tutorials/todo/app/models/task.rb",
+		"/C/Sites/tutorials/todo/db/migrate/20150205174009_devise_create_users.rb",
+		"/C/Ruby21-x64/lib/ruby/gems/2.1.0/extensions/x64-mingw32/2.1.0/thin-1.5.1/mkmf.log",
+		"/C/Ruby21-x64/lib/ruby/gems/2.1.0/extensions/x64-mingw32/2.1.0/eventmachine-1.0.5/mkmf.log",
+		"/C/Ruby21-x64/lib/ruby/gems/2.1.0/extensions/x64-mingw32/2.1.0/pg-0.18.1/mkmf.log",
+		"/C/Ruby21-x64/lib/ruby/2.1.0/rubygems/ssl_certs/AddTrustExternalCARoot-2048.pem",
+		"/C/Sites/tutorials/todo/app/models/ability.rb",
+		"/C/Sites/tutorials/todo/app/views/layouts/application.html.haml",
+		"/C/Sites/tutorials/todo/app/views/shared/_flash.html.haml",
+		"/C/Sites/tutorials/todo/app/views/devise/passwords/new.html.haml",
+		"/C/Sites/tutorials/todo/app/views/devise/passwords/edit.html.haml",
+		"/C/Sites/tutorials/todo/app/views/devise/confirmations/new.html.haml",
+		"/C/Sites/tutorials/todo/html_to_haml.rb",
+		"/C/Sites/tutorials/todo/html_to_haml.r",
+		"/C/Sites/tutorials/todo/config/routes.rb",
+		"/C/Sites/tutorials/todo/config/environments/development.rb",
+		"/C/Sites/tutorials/todo/config/initializers/devise.rb",
+		"/C/Sites/tutorials/todo/db/migrate/20150205174105_add_confirmable_to_users.rb",
+		"/C/Sites/tutorials/todo/app/assets/stylesheets/page.css.scss",
+		"/C/Users/Joseph/Pictures/From STARSCREAM/Saved pictures/Camera roll.zip",
+		"/C/Sites/tutorials/todo/config/environment.rb",
+		"/C/Sites/tutorials/todo/app/views/tasks/destroy.js.erb",
+		"/C/Sites/tutorials/todo/app/views/tasks/new.js.erb",
+		"/C/Sites/tutorials/todo/app/views/tasks/create.js.erb",
+		"/C/Users/Joseph/OneDrive/UNO/GEOG 1020/Map Quizes/Quiz 2/Map Puzzle.txt",
+		"/C/Sites/tutorials/todo/app/assets/javascripts/application.js",
+		"/B/changelogs/12 14 2014.txt",
+		"/C/Sites/tutorials/todo/app/assets/stylesheets/pages.scss",
+		"/C/Users/Joseph/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Sites/tutorials/todo/db/migrate/20150202025434_create_tasks.rb",
+		"/C/Ruby21-x64/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/generators/rails/app/templates/config/initializers/ssl_configuration.rb",
+		"/C/Ruby21-x64/lib/ruby/site_ruby/2.1.0/rubygems/ssl_certs/AddTrustExternalCARoot-2048.pem",
+		"/C/Ruby21-x64/lib/ruby/site_ruby/2.1.0/rubygems/ssl_certs/AddTrustExternalCARoot.pem",
+		"/C/Sites/tutorials/hello_world/Gemfile",
+		"/C/Sites/tutorials/hello_world/app/assets/javascripts/application.js",
+		"/C/Sites/tutorials/hello_world/db/development.sqlite3",
+		"/C/Users/Joseph/.gitconfig",
+		"/C/Ruby/install",
+		"/C/bdlog.txt",
+		"/C/Program Files/cURL/README.txt",
+		"/C/curl-7.40.0/lib/checksrc.pl",
+		"/C/curl-7.40.0/lib/amigaos.c",
+		"/C/curl-7.40.0/include/README",
+		"/C/curl-7.40.0/include/curl/curl.h",
+		"/C/curl-7.40.0/winbuild/BUILD.WINDOWS.txt",
+		"/C/Users/Joseph/Documents/GitHub/basic_roguelike/project_notes.txt",
+		"/C/Users/Joseph/Documents/GitHub/basic_roguelike/basic_roguelike.c"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Sites\\tutorials\\todo",
+			"C:\\Sites\\tutorials\\hello_world"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"span10-offset",
+			"simple_form_for",
+			"ethernet",
+			"remember_created_at",
+			"SessionsController",
+			"logout",
+			"remember_created_at",
+			"500",
+			"2015",
+			"created at",
+			"(document).ready()",
+			"username",
+			"usern",
+			"fe_",
+			"path",
+			"env",
+			"RUBYARCHDIR",
+			"validate_presence_of",
+			"tasks",
+			"pages.js.coffee",
+			"modal",
+			"Install",
+			": ",
+			":  ",
+			"Install",
+			"Uninstall",
+			"Un",
+			"Install",
+			"......",
+			"....",
+			"   ",
+			"angular",
+			"block",
+			"display:block",
+			"hide",
+			"fade",
+			"modal",
+			"runtimes",
+			"require_tree",
+			";",
+			"C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"i :",
+			":  ",
+			": ",
+			"i",
+			"u",
+			"",
+			"I",
+			": ",
+			"......",
+			"....",
+			"\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true
+}
