@@ -1,13 +1,32 @@
-<div>
-  <span>Log In</span>
+<div ng-show="loginTry">
+<form class="ui form" ng-submit="login()">
+  <h4 class="ui dividing header">Login</h4>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" class="form-control" placeholder="Email" ng-model="person.email">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password" class="form-control" placeholder="Password" ng-model="person.password">
+    </div>
+    <input type="submit" class="btn btn-default" value="Log In">
+  </form>
 </div>
+<div ng-show="registerTry">
+  <div>
+    <span>Register</span>
+  </div>
 
-<form ng-submit="login()">
-  <div class="input-group">
-    <input type="email" class="form-control" placeholder="Email" ng-model="person.email">
-  </div>
-  <div class="input-group">
-    <input type="password" class="form-control" placeholder="Password" ng-model="person.password">
-  </div>
-  <input type="submit" class="btn btn-default" value="Log In">
-</form>
+  <form ng-submit="register()">
+    <div class="input-group">
+      <input type="email" class="form-control" placeholder="Email" ng-model="user.email">
+    </div>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Username" ng-model="user.username">
+    </div>
+    <div class="input-group">
+      <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+    </div>
+    <input type="submit" class="btn btn-default" value="Register">
+  </form>
+</div>

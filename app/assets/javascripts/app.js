@@ -6,6 +6,8 @@
   app.run(['$rootScope', 'Auth', 'ngDialog', '$state', controller]);
 
   function controller($rootScope, Auth, ngDialog, $state) {
+    $rootScope.loginTry = true;
+    $rootScope.registerTry = false;
 
     $rootScope.person = {};
     $('.dropdown').dropdown();
@@ -50,6 +52,19 @@
     $rootScope.register = function() {
       Auth.register($rootScope.user).then(function(){
         $state.go('home');
+      });
+    };
+
+    $rootScope.openLogin = function (modal) {
+      if(modal === 'login') {
+        $rootScope.loginTry = true;
+        $rootScope.registerTry = false;
+      } else {
+        $rootScope.loginTry = false;
+        $rootScope.registerTry = true;
+      }
+      ngDialog.open({
+          template: 'auth/_login.html'
       });
     };
   }
