@@ -14,5 +14,5 @@
  *= require_self
  *= require semantic-ui
  *= require ngDialog
- *= require common/main.less
+ *= require common/main.scss
  */
