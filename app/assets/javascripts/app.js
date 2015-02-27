@@ -3,12 +3,13 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog']);
 
-  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', controller]);
+  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', '$http', 'TicketService', controller]);
 
-  function controller($rootScope, Auth, ngDialog, $state) {
+  function controller($rootScope, Auth, ngDialog, $state, $http, ticketService) {
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;
 
+    $rootScope.ticket = {};
     $rootScope.person = {};
     $('.dropdown').dropdown();
 
@@ -17,6 +18,18 @@
 
     Auth.currentUser().then(function (user){
       $rootScope.user = user;
+
+      ticketService.getUserTickets($rootScope.user.id).then(function(userTickets) {
+        console.log(userTickets);
+      }, function(error) {
+        console.log(error);
+      });
+
+      ticketService.getTickets().then(function(tickets) {
+        console.log(tickets);
+      }, function(error) {
+        console.log(error);
+      });
     });
 
     $rootScope.$on('devise:unauthorized', function(event, xhr, deferred) {
@@ -65,6 +78,16 @@
       }
       ngDialog.open({
           template: 'auth/_login.html'
+      });
+    };
+
+
+
+    $rootScope.submitTicket = function() {
+      ticketService.createUserTicket($rootScope.user.id, $rootScope.ticket).success(function(data) {
+        console.log(data);
+      }, function(error) {
+        console.log(error);
       });
     };
   }

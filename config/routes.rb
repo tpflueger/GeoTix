@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   # A separate route used to retrieve all tickets, because our previously
   # defined route for tickets:index is user-specific.
-  get '/tickets', to: 'ticket#index_all'
+  get '/tickets', to: 'tickets#index_all'
 end

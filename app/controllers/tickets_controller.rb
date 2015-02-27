@@ -1,11 +1,11 @@
-class TicketController < ApplicationController
+class TicketsController < ApplicationController
   # Users have the ability to create, update, and destroy tickets.
   # An authenticated session is required to perform these actions.
   before_filter :authenticate_user!, only: [:create, :update, :destroy]
 
   # Return all tickets associated with the current user
   def index
-    respond_with Ticket.find(user_id: current_user.id)
+    respond_with Ticket.where(user_id: params[:user_id])
   end
 
   # Return all tickets
@@ -13,25 +13,29 @@ class TicketController < ApplicationController
     respond_with Ticket.all
   end
 
-  # Create a new ticket and send it back to the client
   def create
-    respond_with Ticket.create(ticket_params.merge(user_id: current_user.id))
+    @ticket = Ticket.new(ticket_params.merge(user_id: current_user.id))
+    if @ticket.save
+      respond_to do |format|
+        format.json { render :json => @ticket }
+      end
+    end
   end
 
   # Update a ticket with params sent from the client
   def update
-    ticket = Ticket.find(params[:user_id])
-    # add updating here
-
     respond_with ticket
+    @ticket = Ticket.find(params[:id])
+    if @ticket.update(ticket_params)
+      respond_to do |format|
+        format.json { render :json => @ticket }
+      end
+    end
   end
 
   # Destroy a ticket
   def destroy
-    ticket = Ticket.find(params[:user_id])
-    ticket.destroy
-
-    respond_with Ticket.find(user: current_user.id)
+    respond_with Ticket.destroy(params[:id])
   end
 
   private
