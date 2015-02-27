@@ -3,13 +3,14 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog']);
 
-  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', '$http', 'TicketService', controller]);
+  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', controller]);
 
-  function controller($rootScope, Auth, ngDialog, $state, $http, ticketService) {
+  function controller($rootScope, Auth, ngDialog, $state, ticketService) {
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;
 
     $rootScope.ticket = {};
+    $rootScope.registerUser = {};
     $rootScope.person = {};
     $('.dropdown').dropdown();
 
@@ -63,8 +64,9 @@
     };
 
     $rootScope.register = function() {
-      Auth.register($rootScope.user).then(function(){
+      Auth.register($rootScope.registerUser).then(function(){
         $state.go('home');
+        ngDialog.close();
       });
     };
 

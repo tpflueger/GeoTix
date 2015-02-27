@@ -53,12 +53,13 @@
 
             return deferred.promise;
         }
+
         return {
             getTickets: getTickets,
             getUserTickets: getUserTickets,
             updateUserTicket: updateUserTicket,
             deleteUserTicket: deleteUserTicket,
             createUserTicket: createUserTicket
-        }
+        };
     }
 })();
