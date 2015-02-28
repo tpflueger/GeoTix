@@ -24,8 +24,7 @@ class TicketsController < ApplicationController
 
   # Update a ticket with params sent from the client
   def update
-    respond_with ticket
-    @ticket = Ticket.find(params[:id])
+    @ticket = Ticket.where("user_id = ?", current_user.id).where("id = ?", params[:id])
     if @ticket.update(ticket_params)
       respond_to do |format|
         format.json { render :json => @ticket }
@@ -35,7 +34,8 @@ class TicketsController < ApplicationController
 
   # Destroy a ticket
   def destroy
-    respond_with Ticket.destroy(params[:id])
+    @ticket = Ticket.where("user_id = ?", current_user.id)
+    respond_with @ticket.destroy(params[:id])
   end
 
   private

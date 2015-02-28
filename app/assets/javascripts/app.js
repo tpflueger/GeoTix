@@ -14,6 +14,12 @@
     $rootScope.person = {};
     $('.dropdown').dropdown();
 
+    ticketService.getTickets().then(function(tickets) {
+      console.log(tickets);
+    }, function(error) {
+      console.log(error);
+    });
+    
     $rootScope.signedIn = Auth.isAuthenticated;
     $rootScope.logout = Auth.logout;
 
@@ -22,12 +28,6 @@
 
       ticketService.getUserTickets($rootScope.user.id).then(function(userTickets) {
         console.log(userTickets);
-      }, function(error) {
-        console.log(error);
-      });
-
-      ticketService.getTickets().then(function(tickets) {
-        console.log(tickets);
       }, function(error) {
         console.log(error);
       });
@@ -83,10 +83,8 @@
       });
     };
 
-
-
     $rootScope.submitTicket = function() {
-      ticketService.createUserTicket($rootScope.user.id, $rootScope.ticket).success(function(data) {
+      ticketService.createUserTicket($rootScope.user.id, $rootScope.ticket).then(function(data) {
         console.log(data);
       }, function(error) {
         console.log(error);

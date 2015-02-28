@@ -33,18 +33,42 @@
             return deferred.promise;
         }
 
-        function updateUserTicket () {
+        function updateUserTicket (userId, ticketId, ticket) {
+            // http://localhost:3000/users/:userId/tickets/:ticketId.json
+            var url = ['users', userId, 'tickets', ticketId + '.json'].join('/'),
+                deferred = $q.defer();
 
+            $http.put(url, ticket).success(function(data) {
+                deferred.resolve(data);
+            }, function(error) {
+                deferred.reject(error);
+            });
+
+            return deferred.promise;
         }
 
-        function deleteUserTicket() {
+        function deleteUserTicket(userId, ticketId) {
+            // http://localhost:3000/users/:/userId/tickets/:ticketId.json
+            var url = ['users', userId, 'tickets', ticketId + '.json'].join('/'),
+                deferred = $q.defer();
 
+            $http.delete(url).success(function(data) {
+                deferred.resolve(data);
+            }, function(error) {
+                deferred.reject(error);
+            });
+
+            return deferred.promise;
         }
 
         function createUserTicket(userId, ticket) {
             var url = ['users', userId, 'tickets.json'].join('/'),
                 deferred = $q.defer();
 
+            // Request with object.
+            // We can chain methods using promises
+            // parameters for a promise is success, error
+            // $http.post().success(success,error);
             $http.post(url, ticket).success(function(data) {
                 deferred.resolve(data);
             }, function(error) {
