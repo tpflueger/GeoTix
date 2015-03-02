@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   get '/tickets', to: 'tickets#index_all'
 
   # Update and destroy users
-  put '/user/:user_id/update', to: 'users#update'
-  delete '/user/:user_id/destroy', to: 'users#destroy'
+  put '/users/:user_id/update', to: 'users#update'
+  delete '/users/:user_id/destroy', to: 'users#destroy'
 end

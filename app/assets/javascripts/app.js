@@ -3,9 +3,13 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog']);
 
-  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', controller]);
+  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', 'ProfileService', controller]);
 
-  function controller($rootScope, Auth, ngDialog, $state, ticketService) {
+  function controller($rootScope, Auth, ngDialog, $state, ticketService, profileService) {
+    console.log(profileService);
+
+    $rootScope.profile = profileService;
+
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;
 
@@ -19,7 +23,7 @@
     }, function(error) {
       console.log(error);
     });
-    
+
     $rootScope.signedIn = Auth.isAuthenticated;
     $rootScope.logout = Auth.logout;
 

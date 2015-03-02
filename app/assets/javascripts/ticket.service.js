@@ -33,7 +33,7 @@
             return deferred.promise;
         }
 
-        function updateUserTicket (userId, ticketId, ticket) {
+        function updateUserTicket(userId, ticketId, ticket) {
             // http://localhost:3000/users/:userId/tickets/:ticketId.json
             var url = ['users', userId, 'tickets', ticketId + '.json'].join('/'),
                 deferred = $q.defer();
