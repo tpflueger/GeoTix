@@ -3,13 +3,9 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog']);
 
-  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', 'ProfileService', controller]);
+  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', controller]);
 
-  function controller($rootScope, Auth, ngDialog, $state, ticketService, profileService) {
-    console.log(profileService);
-
-    $rootScope.profile = profileService;
-
+  function controller($rootScope, Auth, ngDialog, $state, ticketService) {
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;
 
