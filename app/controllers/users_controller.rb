@@ -9,11 +9,18 @@ class UsersController < ApplicationController
     end
   end
 
+  # Destroy the current user
   def destroy
-    @user = User.where("user_id = ?", current_user.id)
-    respond_with @ticket.destroy(params[:id])
+    # All tickets associated with the current user must be destroyed first
+    @tickets = Ticket.where("user_id = ?", current_user.id)
+    @tickets.each do |ticket|
+      ticket.destroy
+    end
+
+    respond_with User.destroy(current_user.id)
   end
 
+  # Define user parameters that can be accepted from the client
   private
   def user_params
     params.require(:user).permit(:username, :email, :encyrpted_password)
