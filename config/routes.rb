@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   # defined route for tickets:index is user-specific.
   get '/tickets', to: 'tickets#index_all'
 
-  # Update user's profile
+  # Update and destroy users
   put '/user/:user_id/update', to: 'users#update'
+  delete '/user/:user_id/destroy', to: 'users#destroy'
 end

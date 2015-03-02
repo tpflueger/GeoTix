@@ -10,5 +10,7 @@ class UserController < ApplicationController
   end
 
   def destroy
+    @user = User.where("user_id = ?", current_user.id)
+    respond_with @ticket.destroy(params[:id])
   end
 end
