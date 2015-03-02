@@ -9,9 +9,46 @@
 
         $stateProvider
             .state('home', {
+                abstract: true,
                 url: '/home',
-                templateUrl: 'home/_home.html',
-                controller: 'MainCtrl'
+                controller: 'MainCtrl',
+                views: {
+                    '': {
+                        templateUrl: 'home/_main.html'
+                    }
+                }
+            })
+            .state('home.search', {
+                url: '/search',
+                views: {
+                    'panel@home': {
+                        templateUrl: 'auth/_register.html'
+                    }
+                }
+            })
+            .state('home.tickets', {
+                url: '/tickets',
+                views: {
+                    'panel@home': {
+                        templateUrl: ''
+                    }
+                }
+            })
+            .state('home.tickets-create', {
+                url: '/tickets/create',
+                views: {
+                    'panel@home': {
+                        templateUrl: ''
+                    }
+                }
+            })
+            .state('home.ticket', {
+                url: '/tickets/:ticketId',
+                views: {
+                    'panel@home': {
+                        templateUrl: 'auth/_login.html'
+                    }
+                }
             })
             .state('profile', {
                 url: '/profile',
@@ -19,6 +56,6 @@
                 controller: 'ProfileController'
             });
 
-        $urlRouterProvider.otherwise('home');
+        $urlRouterProvider.otherwise('home/search');
     }
 })();
