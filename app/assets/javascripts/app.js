@@ -19,7 +19,7 @@
     }, function(error) {
       console.log(error);
     });
-    
+
     $rootScope.signedIn = Auth.isAuthenticated;
     $rootScope.logout = Auth.logout;
 
