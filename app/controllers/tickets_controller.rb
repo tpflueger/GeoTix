@@ -25,7 +25,7 @@ class TicketsController < ApplicationController
   # Update a ticket with params sent from the client
   def update
     @ticket = Ticket.where("user_id = ?", current_user.id).where("id = ?", params[:id])
-    if @ticket.update(ticket_params)
+    if @ticket.update(params[:id], ticket_params)
       respond_to do |format|
         format.json { render :json => @ticket }
       end
@@ -38,9 +38,8 @@ class TicketsController < ApplicationController
     respond_with @ticket.destroy(params[:id])
   end
 
-  private
-
   # Define ticket parameters that can be accepted from the client
+  private
   def ticket_params
     params.require(:ticket).permit(:title, :description, :lat, :long, :is_active)
   end
