@@ -4,6 +4,7 @@
 //= require angular-devise
 //= require angular-rails-templates
 //= require angular-ui-router
+//= require angular-google-maps
 //= require ngDialog
 //= require semantic-ui
 //= require_tree .

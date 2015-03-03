@@ -1,11 +1,12 @@
 (function () {
   'use strict';
 
-  var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog']);
+  var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog', 'uiGmapgoogle-maps']);
 
-  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', '$timeout', controller]);
+  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', '$timeout', '$window', controller]);
 
-  function controller($rootScope, Auth, ngDialog, $state, ticketService, $timeout) {
+  function controller($rootScope, Auth, ngDialog, $state, ticketService, $timeout, $window) {
+    $rootScope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
     $rootScope.$state = $state;
     $rootScope.isDialogOpen = false;
     $rootScope.loginTry = true;
@@ -104,6 +105,22 @@
     //Some reason with menu being placed in subview, it can't find it until fully initialized
     $timeout(function() {
       $('.dropdown').dropdown();
+    });
+
+    $window.navigator.geolocation.getCurrentPosition(function(position) {
+      $rootScope.map.center.latitude = position.coords.latitude;
+      $rootScope.map.center.longitude = position.coords.longitude;
+      $rootScope.map.zoom = 12;
+      $timeout(function () {
+        var map = document.getElementById('map_canvas');
+        angular.element(map).triggerHandler('click');
+      }, 0);
+    }, function(error) {
+      console.log(error);
+    }, {
+      enableHighAccuracy: true,
+      timeout: 30000,
+      maximumAge: 30000
     });
 
   }
