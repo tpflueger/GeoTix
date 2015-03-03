@@ -1,5 +1,9 @@
 <div class="ui left vertical inverted labeled icon sidebar menu panel">
     <div ui-view="panel"></div>
+    <div class="ui buttons">
+        <div class="ui red button" ui-sref="home.search" ng-class="{ active: $state.$current.data.active === 'search'}">Tickets</div>
+        <div class="ui red button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">My Tickets</div>
+    </div>
 </div>
 <div class="container pusher">
     <div class="ui inverted menu navbar">
@@ -25,4 +29,5 @@
     <input type="text" class="form-control" ng-model="ticket.lat">
     <input type="text" class="form-control" ng-model="ticket.long">
     <button ng-click="submitTicket()">Submit Ticket</button>
+    <button ng-click="hit()">Hit</button>
 </div>

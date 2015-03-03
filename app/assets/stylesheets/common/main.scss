@@ -10,6 +10,10 @@
 
 
 .panel {
+    [ui-view="panel"] {
+        height: 94%;
+    }
+
     &.ui {
         &.menu {
             &.vertical {
@@ -44,5 +48,28 @@
         margin: 0 auto;
         margin-top: 20%;
         margin-bottom: 20%;
+
+        .field {
+            &.action {
+                text-align: center;
+                padding: 10px;
+            }
+
+            &.nav {
+                text-align: center;
+                .left {
+                    margin-right: 5px;
+                }
+
+                .right {
+                    margin-left: 5px;
+                }
+            }
+
+            [type="submit"] {
+                width: 120px;
+                height: 50px;
+            }
+        }
     }
 }

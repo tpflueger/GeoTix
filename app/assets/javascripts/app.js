@@ -3,19 +3,20 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog']);
 
-  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', controller]);
+  app.run(['$rootScope', 'Auth', 'ngDialog', '$state', 'TicketService', '$timeout', controller]);
 
-  function controller($rootScope, Auth, ngDialog, $state, ticketService) {
+  function controller($rootScope, Auth, ngDialog, $state, ticketService, $timeout) {
+    $rootScope.$state = $state;
+    $rootScope.isDialogOpen = false;
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;
 
     $rootScope.ticket = {};
     $rootScope.registerUser = {};
     $rootScope.person = {};
-    $('.dropdown').dropdown();
 
     ticketService.getTickets().then(function(tickets) {
-      console.log(tickets);
+      $rootScope.allTickets = tickets;
     }, function(error) {
       console.log(error);
     });
@@ -27,18 +28,21 @@
       $rootScope.user = user;
 
       ticketService.getUserTickets($rootScope.user.id).then(function(userTickets) {
-        console.log(userTickets);
+        $rootScope.userTickets = userTickets;
       }, function(error) {
         console.log(error);
       });
     });
 
     $rootScope.$on('devise:unauthorized', function(event, xhr, deferred) {
-      ngDialog.open({
-        template: 'auth/_login.html'
-      });
+      if(!$rootScope.isDialogOpen) {
+        ngDialog.openConfirm({
+          template: 'auth/_login.html',
+          showClose: false
+        });
+        $rootScope.isDialogOpen = true;
+      }
     });
-
 
     $rootScope.$on('devise:new-registration', function (e, user){
       $rootScope.user = user;
@@ -58,14 +62,16 @@
 
     $rootScope.login = function() {
       Auth.login($rootScope.person).then(function(){
-        $state.go('home');
+        $rootScope.isDialogOpen = false;
+        $state.go('home.search');
         ngDialog.close();
       });
     };
 
     $rootScope.register = function() {
       Auth.register($rootScope.registerUser).then(function(){
-        $state.go('home');
+        $rootScope.isDialogOpen = false;
+        $state.go('home.search');
         ngDialog.close();
       });
     };
@@ -78,9 +84,13 @@
         $rootScope.loginTry = false;
         $rootScope.registerTry = true;
       }
-      ngDialog.open({
-          template: 'auth/_login.html'
-      });
+      if(!$rootScope.isDialogOpen) {
+        ngDialog.openConfirm({
+          template: 'auth/_login.html',
+          showClose: false
+        });
+        $rootScope.isDialogOpen = true;
+      }
     };
 
     $rootScope.submitTicket = function() {
@@ -90,5 +100,11 @@
         console.log(error);
       });
     };
+
+    //Some reason with menu being placed in subview, it can't find it until fully initialized
+    $timeout(function() {
+      $('.dropdown').dropdown();
+    });
+
   }
 })();

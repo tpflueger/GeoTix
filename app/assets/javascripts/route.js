@@ -22,23 +22,30 @@
                 url: '/search',
                 views: {
                     'panel@home': {
-                        templateUrl: 'auth/_register.html'
+                        //templateUrl: 'auth/_register.html'
                     }
+                },
+                data: {
+                    active: 'search'
                 }
             })
             .state('home.tickets', {
                 url: '/tickets',
+                controller: 'ProfileController',
                 views: {
                     'panel@home': {
-                        templateUrl: ''
+                        //templateUrl: 'auth/_register.html'
                     }
+                },
+                data: {
+                    active: 'tickets'
                 }
             })
             .state('home.tickets-create', {
                 url: '/tickets/create',
                 views: {
                     'panel@home': {
-                        templateUrl: ''
+                        templateUrl: 'auth/_login.html'
                     }
                 }
             })
