@@ -34,7 +34,7 @@
                 controller: 'ProfileController',
                 views: {
                     'panel@home': {
-                        //templateUrl: 'auth/_register.html'
+                        templateUrl: 'panel/panel.search/_panel.search.html'
                     }
                 },
                 data: {

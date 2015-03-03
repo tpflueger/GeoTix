@@ -1,4 +1,7 @@
 <div class="ui left vertical inverted labeled icon sidebar menu panel">
+    <div class="ui inverted red menu">
+
+    </div>
     <div ui-view="panel"></div>
     <div class="ui buttons">
         <div class="ui red button" ui-sref="home.search" ng-class="{ active: $state.$current.data.active === 'search'}">Tickets</div>
@@ -22,7 +25,7 @@
             </div>
         </div>
     </div>
-    <h1>Thats not my damn fault, I thought you knew</h1>
+    <h1>Test adding tickets</h1>
     <input type="text" class="form-control" ng-model="ticket.title">
     <input type="text" class="form-control" ng-model="ticket.description">
     <input type="boolean" class="form-control" ng-model="ticket.is_active">
