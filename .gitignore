@@ -6,3 +6,4 @@ config/database.yml
 *.log
 /.idea
 /lib/assets/bower_components/**
+/lib/assets/**
