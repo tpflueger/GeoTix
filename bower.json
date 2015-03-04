@@ -7,7 +7,8 @@
       "angular-devise": "~0.6.1",
       "lodash": "latest",
       "semantic-ui": "latest",
-      "ngDialog": "latest"
+      "ngDialog": "latest",
+      "angular-google-maps": "latest"
     }
   },
   "vendor": {
