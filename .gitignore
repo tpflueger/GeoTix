@@ -2,7 +2,6 @@
 /tmp
 /log
 Gemfile.lock
-config/database.yml
 *.log
 /.idea
 /lib/assets/bower_components/**
