@@ -21,8 +21,11 @@
             .state('home.search', {
                 url: '/search',
                 views: {
-                    'panel@home': {
-                        //templateUrl: 'auth/_register.html'
+                    'panel@': {
+                        templateUrl: 'panel/search/_panel.search.html'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/search/_panel.search.html'
                     }
                 },
                 data: {
@@ -33,8 +36,11 @@
                 url: '/tickets',
                 controller: 'ProfileController',
                 views: {
-                    'panel@home': {
-                        templateUrl: 'panel/panel.search/_panel.search.html'
+                    'panel@': {
+                        templateUrl: 'panel/user/_panel.user.tickets.html'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/user/_panel.user.tickets.html'
                     }
                 },
                 data: {
@@ -44,8 +50,11 @@
             .state('home.tickets-create', {
                 url: '/tickets/create',
                 views: {
-                    'panel@home': {
-                        templateUrl: 'auth/_login.html'
+                    'panel@': {
+                        //templateUrl: 'auth/_login.html'
+                    },
+                    'panel': {
+                        //templateUrl: ''
                     }
                 }
             })
