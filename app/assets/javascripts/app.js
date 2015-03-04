@@ -139,12 +139,12 @@
         },
         radius: 20,
         stroke: {
-          color: '#08B21F',
+          color: '#FFFFFF',
           weight: 2,
           opacity: 1
         },
         fill: {
-          color: '#08B21F',
+          color: '#1f08b2',
           opacity: 0.5
         }
       };
