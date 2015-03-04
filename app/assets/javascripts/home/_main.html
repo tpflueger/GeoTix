@@ -25,5 +25,11 @@
             </div>
         </div>
     </div>
-    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-circle center='userCircle.center'
+                        radius='userCircle.radius'
+                        fill='userCircle.fill'
+                        stroke='userCircle.stroke'>
+        </ui-gmap-circle>
+    </ui-gmap-google-map>
 </div>

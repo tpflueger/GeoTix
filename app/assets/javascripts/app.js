@@ -107,10 +107,52 @@
       $('.dropdown').dropdown();
     });
 
+    (function refreshPosition() {
+      $window.navigator.geolocation.getCurrentPosition(function(position) {
+        $rootScope.userCircle = null;
+
+        $rootScope.userCircle = {
+          center: {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude
+          },
+          radius: 20,
+          stroke: {
+            color: '#FFFFFF',
+            weight: 2,
+            opacity: 1
+          },
+          fill: {
+            color: '#1f08b2',
+            opacity: 0.5
+          }
+        }
+        $rootScope.promise = $timeout(refreshPosition, 1000);
+      });
+    })();
+
     $window.navigator.geolocation.getCurrentPosition(function(position) {
+      $rootScope.userCircle = {
+        center: {
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude
+        },
+        radius: 20,
+        stroke: {
+          color: '#08B21F',
+          weight: 2,
+          opacity: 1
+        },
+        fill: {
+          color: '#08B21F',
+          opacity: 0.5
+        }
+      };
+
       $rootScope.map.center.latitude = position.coords.latitude;
       $rootScope.map.center.longitude = position.coords.longitude;
-      $rootScope.map.zoom = 12;
+      $rootScope.map.zoom = 18;
+
       $timeout(function () {
         var map = document.getElementById('map_canvas');
         angular.element(map).triggerHandler('click');
@@ -122,6 +164,5 @@
       timeout: 30000,
       maximumAge: 30000
     });
-
   }
 })();
