@@ -2,233 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7490a993-181a-4722-a0df-52959c3d2e36" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/bower_components/lodash/lodash.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/bower_components/lodash/lodash.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/lodash/.bower.json" afterPath="$PROJECT_DIR$/lib/assets/bower_components/lodash/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/.bower.json" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/Gruntfile.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/LICENSE.md" afterPath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/lodash/LICENSE.txt" afterPath="$PROJECT_DIR$/lib/assets/bower_components/lodash/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/README.md" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/RELEASE-NOTES.md" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/RELEASE-NOTES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/home/_main.html" afterPath="$PROJECT_DIR$/app/assets/javascripts/home/_main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/accordion.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/accordion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/accordion.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/accordion.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/accordion.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/ad.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/ad.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/ad.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/ad.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/ad.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/ad.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/api.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/api.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/api.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/api.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/app.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/bower.json" afterPath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/lodash/bower.json" afterPath="$PROJECT_DIR$/lib/assets/bower_components/lodash/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/breadcrumb.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/breadcrumb.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/breadcrumb.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/breadcrumb.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/breadcrumb.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/breadcrumb.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/build.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/rtl/build.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/rtl/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/button.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/button.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/button.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/button.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/button.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/button.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/card.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/card.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/card.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/card.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/card.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/card.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/checkbox.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/checkbox.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/checkbox.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/checkbox.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/colorize.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/colorize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/comment.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/comment.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/comment.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/comment.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/comment.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/comment.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/config/admin/templates/css-package.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/config/admin/templates/css-package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/src/build/devise.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/src/build/devise.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dimmer.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dimmer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dimmer.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dimmer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dimmer.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/divider.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/divider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/divider.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/divider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/divider.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/divider.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dropdown.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dropdown.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/dropdown.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/dropdown.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/feed.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/feed.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/feed.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/feed.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/feed.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/feed.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/flag.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/flag.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/flag.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/flag.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/flag.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/flag.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/form.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/form.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/form.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/form.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/grid.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/grid.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/grid.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/grid.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/grid.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/header.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/header.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/header.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/header.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/header.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/icon.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/icon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/icon.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/icon.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/icon.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/icon.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/themes/default/elements/icon.overrides" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/themes/default/elements/icon.overrides" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/image.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/image.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/image.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/image.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/image.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/image.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/input.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/input.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/input.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/input.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/input.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/input.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/collections/internal.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/collections/internal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/item.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/item.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/item.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/item.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/item.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/item.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/label.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/label.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/label.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/label.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/label.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/label.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/list.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/list.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/list.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/list.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/loader.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/loader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/loader.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/loader.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/loader.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/loader.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/menu.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/menu.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/menu.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/menu.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/menu.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/themes/default/collections/menu.variables" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/themes/default/collections/menu.variables" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/message.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/message.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/message.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/message.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/message.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/message.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/modal.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/modal.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/modal.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/modal.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/nag.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/nag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/nag.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/nag.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/nag.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/package.json" afterPath="$PROJECT_DIR$/lib/assets/bower_components/angular-devise/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/package.json" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/popup.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/popup.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/popup.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/popup.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/progress.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/progress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/progress.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/progress.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/progress.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rail.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/rail.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/rail.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rail.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rail.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/rating.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/rating.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/rating.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/rating.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/rating.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reset.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/globals/reset.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/globals/reset.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reset.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reset.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reveal.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reveal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/reveal.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/reveal.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reveal.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/reveal.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/search.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/search.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/search.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/search.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/segment.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/segment.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/segment.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/segment.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/segment.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/segment.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/semantic.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/shape.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/shape.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/shape.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/shape.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/shape.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sidebar.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sidebar.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sidebar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sidebar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/globals/site.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/globals/site.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/globals/site.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/globals/site.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/site.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/state.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/state.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/state.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/state.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/statistic.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/statistic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/statistic.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/views/statistic.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/statistic.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/statistic.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/step.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/step.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/step.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/elements/step.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/step.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/step.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sticky.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sticky.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/sticky.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/sticky.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/tab.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/tab.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/tab.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/tab.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/table.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/table.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/collections/table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/table.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/config/project/tasks.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/config/project/tasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/transition.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/transition.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/transition.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/transition.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/video.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/video.less" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/modules/video.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.min.css" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/video.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/visibility.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/visibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/visibility.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/visibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/visibility.min.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/dist/components/visibility.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/visit.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/src/definitions/behaviors/visit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/watch.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/watch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/rtl/watch.js" afterPath="$PROJECT_DIR$/lib/assets/bower_components/semantic-ui/tasks/rtl/watch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/common/main.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/common/main.scss" />
     </list>
     <ignored path="geotix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -285,8 +60,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -302,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4822335" vertical-offset="1575" max-vertical-offset="2610">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="2610">
               <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
               <folding />
             </state>
@@ -342,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1575">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.5799649" vertical-offset="0" max-vertical-offset="1665">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -392,10 +167,10 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/config.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/common/main.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/home/_main.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/app.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/common/main.scss" />
       </list>
     </option>
   </component>
@@ -431,7 +206,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -768,6 +542,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -782,10 +557,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -793,10 +572,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -841,8 +616,6 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -850,7 +623,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1166,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="690">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,26 +991,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1575">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="2610">
+          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1249,10 +1015,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/app.js">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4822335" vertical-offset="1575" max-vertical-offset="2610">
-          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5799649" vertical-offset="0" max-vertical-offset="1665">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
