@@ -94,14 +94,6 @@
       }
     };
 
-    $rootScope.submitTicket = function() {
-      ticketService.createUserTicket($rootScope.user.id, $rootScope.ticket).then(function(data) {
-        console.log(data);
-      }, function(error) {
-        console.log(error);
-      });
-    };
-
     //Some reason with menu being placed in subview, it can't find it until fully initialized
     $timeout(function() {
       $('.dropdown').dropdown();

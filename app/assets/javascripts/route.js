@@ -51,10 +51,12 @@
                 url: '/tickets/create',
                 views: {
                     'panel@': {
-                        //templateUrl: 'auth/_login.html'
+                        templateUrl: 'panel/create/_panel.tickets.create.html',
+                        controller: 'TicketCreateController'
                     },
                     'panel': {
-                        //templateUrl: ''
+                        templateUrl: 'panel/create/_panel.tickets.create.html',
+                        controller: 'TicketCreateController'
                     }
                 }
             })
