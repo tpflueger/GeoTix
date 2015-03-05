@@ -1,10 +1,21 @@
-<div style="margin-left:10px; margin-right:10px">
+<div style="margin-left:8px; margin-right:8px">
   <h2>Post a new ticket you would like to sell:</h2>
 
-  <form>
-    <input class="ui input" type="text" placeholder="title" ng-model="newTicket.title">
+  <form class="ui form">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" placeholder="name of the event" ng-model="newTicket.title">
+    </div>
+    <div class="field">
+      <label>Description</label>
+      <textarea placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
+    </div>
   </form>
-  <div class="ui buttons">
+
+  <div style="margin-top:30px;">
+    <div class="ui red inverted icon button" style="margin-right:10px;">
+      <i class="reply icon"></i> Cancel
+    </div>
     <div class="ui red button" ng-click="submit()">Submit</div>
   </div>
 </div>
