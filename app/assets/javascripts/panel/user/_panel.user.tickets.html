@@ -1,1 +1,23 @@
 <h1>User Tickets</h1>
+<div class="item">
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</t>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="ticket in tickets">
+        <td>{{ticket.title}}</td>
+        <td>{{ticket.description}}</td>
+        <td>{{ticket.is_active}}</td>
+        <td><button class="ui red button">Delete</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+<button class="ui green button">Add Ticket</button>
+</div>
