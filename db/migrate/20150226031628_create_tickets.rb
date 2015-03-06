@@ -5,6 +5,7 @@ class CreateTickets < ActiveRecord::Migration
       t.string :description
       t.string :user
       t.boolean :is_active
+      t.integer :user_id
       
       t.string :lat
       t.string :long
