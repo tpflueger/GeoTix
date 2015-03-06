@@ -1,6 +1,23 @@
 .angular-google-map-container { height: 100%; width: 100%;}
 .angular-google-map { height: 100%; width: 100%;}
 
+.items{
+    height: 85%;
+    table{
+        thead{
+            th{
+                font-size:12px;
+            }
+        }
+        tbody{
+            td{
+            font-size:12px;
+            }
+        }
+    }
+}
+
+
 .pusher {
     z-index: 10 !important;
 }
@@ -32,7 +49,7 @@
     }
 }
 
-.panel {
+.panel { 
     [ui-view="panel"] {
         height: 85%;
     }
@@ -41,7 +58,7 @@
         &.menu {
 
             &.vertical {
-                width: 300px !important;
+                width: 350px !important;
             }
 
 
@@ -54,7 +71,7 @@
         &.sidebar {
             &.uncover {
                 &.visible {
-                    width: 300px !important;
+                    width: 350px !important;
                 }
             }
 
