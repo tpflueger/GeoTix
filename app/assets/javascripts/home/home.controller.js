@@ -7,6 +7,8 @@
 
   function homeController($scope, $timeout, ticketService, positionService) {
 
+    $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+
     $scope.openSidebar = function () {
       $('.ui.sidebar').sidebar('toggle');
     };
