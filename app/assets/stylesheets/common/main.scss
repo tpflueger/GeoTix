@@ -1,6 +1,19 @@
 body {
     position:fixed;
     width: 100%;
+
+    input[type="text"] {
+        font-size: 1rem !important;
+    }
+
+    textarea {
+        font-size: 1rem !important;
+    }
+
+    label {
+        font-size: 1.25rem !important;
+        text-align: left;
+    }
 }
 
 .angular-google-map-container { height: 100%; width: 100%;}

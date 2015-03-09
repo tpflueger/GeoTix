@@ -1,14 +1,14 @@
 <div style="margin-left:8px; margin-right:8px">
-  <h2>Post a new ticket you would like to sell:</h2>
 
-  <form class="ui form">
+  <form class="ui form" style="margin-top:35px;">
+    <h2 class="ui blue dividing header">Post a new ticket you would like to sell:</h2>
     <div class="field">
-      <label>Title</label>
-      <input type="text" placeholder="name of the event" ng-model="newTicket.title">
+      <label class="ui small blue header" style="margin-top:20px; margin-bottom:10px;">Title</label>
+      <input type="text" class="form-control" placeholder="name of the event" ng-model="newTicket.title">
     </div>
     <div class="field">
-      <label>Description</label>
-      <textarea placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
+      <label class="ui small blue header" style="margin-top:20px; margin-bottom:10px;">Description</label>
+      <textarea class="form-control" placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
     </div>
   </form>
 
@@ -16,6 +16,6 @@
     <div class="ui red inverted icon button" style="margin-right:10px;">
       <i class="reply icon"></i> Cancel
     </div>
-    <div class="ui red button" ng-click="submit()">Submit</div>
+    <div class="ui red button">Submit</div>
   </div>
 </div>
