@@ -11,12 +11,8 @@
             .state('home', {
                 abstract: true,
                 url: '/home',
-                controller: 'MainCtrl',
-                views: {
-                    '': {
-                        templateUrl: 'home/_main.html'
-                    }
-                }
+                controller: 'HomeController',
+                templateUrl: 'home/_home.html'
             })
             .state('home.search', {
                 url: '/search',
