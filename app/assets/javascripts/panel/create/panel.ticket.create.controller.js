@@ -9,6 +9,8 @@
     $scope.newTicket = {};
 
     $scope.submit = function() {
+      console.log($scope.newTicket);
+
       ticketService.createUserTicket($scope.user.id, $scope.newTicket).then(function(data) {
         $scope.userTickets.push(data);
       }, function(error) {

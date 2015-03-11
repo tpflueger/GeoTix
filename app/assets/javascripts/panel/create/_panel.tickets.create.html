@@ -1,4 +1,4 @@
-<div style="margin-left:8px; margin-right:8px">
+<div style="margin-left:10px; margin-right:10px">
 
   <form class="ui form" style="margin-top:35px;">
     <h2 class="ui blue dividing header">Post a new ticket you would like to sell:</h2>
@@ -13,9 +13,9 @@
   </form>
 
   <div style="margin-top:30px;">
-    <div class="ui red inverted icon button" style="margin-right:10px;">
+    <div class="ui red inverted icon button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}" style="margin-right:10px;">
       <i class="reply icon"></i> Cancel
     </div>
-    <div class="ui red button">Submit</div>
+    <div class="ui red button" ng-submit="submit()" ng-controller="TicketCreateController">Submit</div>
   </div>
 </div>
