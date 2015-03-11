@@ -1,23 +1,22 @@
-<h1>User Tickets</h1>
+<h1 class="ui purple header">User Tickets</h1>
 <div class="item">
   <table class="ui table">
     <thead>
       <tr>
         <th>Title</th>
         <th>Description</th>
-        <th>Status</th>
+        <th>Date</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="ticket in userTickets">
-        <td>{{ticket.title}}</td>
-        <td>{{ticket.description}}</td>
-        <td>{{ticket.is_active}}</td>
+      <tr ng-repeat="myticket in userTickets">
+        <td>{{myticket.title}}</td>
+        <td>{{myticket.description}}</td>
+        <td>{{myticket.created_at | date: 'MM/dd/yyyy'}}</td>
         <td><button class="ui red button">Delete</button></td>
       </tr>
 
     </tbody>
   </table>
-<button class="ui green button">Add Ticket</button>
 </div>

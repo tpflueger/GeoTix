@@ -3,18 +3,21 @@
 
 .item{
     height: 85%;
-    thead{
-        height:10%;
-        th{
-            font-size:18px;
-            font-style:Arial;
-            font-weight:bold;
+        .ui .table{
+        width: 99%;
+        thead{
+            height:10%;
+            th{
+                font-size:18px;
+                font-style:Arial;
+                font-weight:bold;
+            }
         }
-    }
-    tbody{
-        td{
-            font-size:14px;
-            font-style:Arial;
+        tbody{
+            td{
+                font-size:14px;
+                font-style:Arial;
+            }
         }
     }
 }
