@@ -1,19 +1,29 @@
+<style>
+.form-top { margin-top: 35px; }
+.form-label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.form-btns { margin-top: 30px; }
+.form-btns-cancel { margin-right: 10px; }
+</style>
+
 <div style="margin-left:10px; margin-right:10px">
 
-  <form class="ui form" style="margin-top:35px;">
+  <form class="form-top ui form">
     <h2 class="ui blue dividing header">Post a new ticket you would like to sell:</h2>
     <div class="field">
-      <label class="ui small blue header" style="margin-top:20px; margin-bottom:10px;">Title</label>
+      <label class="form-label ui small blue header">Title</label>
       <input type="text" class="form-control" placeholder="name of the event" ng-model="newTicket.title">
     </div>
     <div class="field">
-      <label class="ui small blue header" style="margin-top:20px; margin-bottom:10px;">Description</label>
+      <label class="form-label ui small blue header">Description</label>
       <textarea class="form-control" placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
     </div>
   </form>
 
-  <div style="margin-top:30px;">
-    <div class="ui red inverted icon button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}" style="margin-right:10px;">
+  <div class="form-btns">
+    <div class="form-btn-cancel ui red inverted icon button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
       <i class="reply icon"></i> Cancel
     </div>
     <div class="ui red button" ng-click="submit()">Submit</div>
