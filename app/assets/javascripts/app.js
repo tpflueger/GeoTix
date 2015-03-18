@@ -43,10 +43,5 @@
       }
       loginService.openDialog();
     };
-
-    //Some reason with menu being placed in subview, it can't find it until fully initialized
-    $timeout(function() {
-      $('.dropdown').dropdown();
-    });
   }
 })();

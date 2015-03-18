@@ -15,4 +15,7 @@
  *= require semantic-ui
  *= require ngDialog
  *= require common/main.scss
+ *= require home/home.scss
+ *= require panel/panel.scss
+ *= require profile/profile.scss
  */
