@@ -1,19 +1,19 @@
-<div class="panel-top">
+<div class="create panel-top">
 
-  <form class="form-top ui form">
+  <form class="create form-top ui form">
     <h2 class="ui blue dividing header">Post a new ticket you would like to sell:</h2>
     <div class="field">
-      <label class="form-label ui small blue header">Title</label>
+      <label class="create form-label ui small blue header">Title</label>
       <input type="text" class="form-control" placeholder="name of the event" ng-model="newTicket.title">
     </div>
     <div class="field">
-      <label class="form-label ui small blue header">Description</label>
+      <label class="create form-label ui small blue header">Description</label>
       <textarea class="form-control" placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
     </div>
   </form>
 
-  <div class="form-btns">
-    <div class="form-btns-cancel ui red inverted icon button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
+  <div class="create form-btns">
+    <div class="create form-btns-cancel ui red inverted icon button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
       <i class="reply icon"></i> Cancel
     </div>
     <div class="ui red button" ng-click="submit()">Submit</div>
