@@ -1,7 +1,6 @@
 *.sublime*
 /tmp
 /log
-Gemfile.lock
 *.log
 /.idea
 /lib/assets/bower_components/**
