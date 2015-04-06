@@ -16,6 +16,9 @@
     $scope.$on('devise:login', function () {
       ticketService.getUserTickets($scope.user.id).then(function(userTickets) {
         $scope.userTickets = userTickets;
+        _.remove($scope.allTickets, function(ticket) {
+          return _.find($scope.userTickets, { id: ticket.id });
+        });
       }, function(error) {
         console.log(error);
       });

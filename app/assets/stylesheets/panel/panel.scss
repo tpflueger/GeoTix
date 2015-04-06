@@ -1,0 +1,38 @@
+.panel {
+  [ui-view="panel"] {
+    height: 85%;
+  }
+
+  &.ui {
+    &.menu {
+
+      &.vertical {
+        width: 300px !important;
+      }
+
+
+      .inverted {
+        height: 35px;
+        z-index: 20;
+      }
+    }
+
+    &.sidebar {
+      &.uncover {
+        &.visible {
+          width: 300px !important;
+        }
+      }
+
+      &.left {
+        &.sidebar {
+          z-index: 5;
+          .pusher {
+            -webkit-transform: translate3d(300px, 0, 0) !important;
+            transform: translate3d(300px, 0, 0) !important;
+          }
+        }
+      }
+    }
+  }
+}

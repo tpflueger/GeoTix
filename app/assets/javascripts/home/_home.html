@@ -15,7 +15,7 @@
         <a class="item" ng-click="openSidebar()">
             <i class="content icon" ng-click="openSidebar"></i>
         </a>
-        <div class="ui dropdown item">
+        <div class="ui dropdown item" dropdown>
             <i class="dropdown icon"></i>
             Profile
             <div class="menu">
@@ -33,5 +33,7 @@
                         fill='userCircle.fill'
                         stroke='userCircle.stroke'>
         </ui-gmap-circle>
+        <ui-gmap-marker ng-repeat="ticket in allTickets" model="ticket" coords="{latitude: ticket.lat, longitude: ticket.long}" idkey="ticket.id" click="onClick(ticket)" options="{title: ticket.title}"></ui-gmap-marker>
+        <ui-gmap-marker ng-repeat="ticket in userTickets" model="ticket" coords="{latitude: ticket.lat, longitude: ticket.long}" idkey="ticket.id" click="onClick(ticket)" options="{title: ticket.title}"></ui-gmap-marker>
     </ui-gmap-google-map>
 </div>
