@@ -17,7 +17,6 @@ module.exports = function(config) {
     files: [
         'lib/assets/bower_components/angular/angular.js',
         'app/assets/javascripts/**/*.html',
-        '**/*.html',
         'lib/assets/bower_components/angular-mocks/angular-mocks.js',
         'lib/assets/bower_components/angular-devise/lib/devise.js',
         'lib/assets/bower_components/angular-google-maps/dist/angular-google-maps.js',
@@ -35,7 +34,8 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-        'app/assets/javascripts/application.js'
+        'app/assets/javascripts/application.js',
+        'karma.conf.js'
     ],
 
 
@@ -57,7 +57,7 @@ module.exports = function(config) {
 
 
     // web server port
-    port: 9876,
+    port: 8765,
 
 
     // enable / disable colors in the output (reporters and logs)
