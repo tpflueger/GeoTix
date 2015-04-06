@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "karma": "^0.12.31",
+    "jasmine-core": "^2.2.0",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-ng-html2js-preprocessor": "^0.1.2"
+  },
+  "name": "geotix",
+  "description": "== Geotix Location based ticket selling application. Repo is built with Angular on Rails and uses Postgres for the DB.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TylerPflueger/GeoTix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerPflueger/GeoTix/issues"
+  },
+  "homepage": "https://github.com/TylerPflueger/GeoTix"
+}
