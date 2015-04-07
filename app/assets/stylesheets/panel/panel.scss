@@ -35,4 +35,28 @@
       }
     }
   }
+
+  &.create {
+    .panel-top {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .form-top {
+      margin-top: 35px;
+    }
+
+    .form-label {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .form-btns {
+      margin-top: 30px;
+
+      &.form-btns-cancel {
+        margin-right: 15px;
+      }
+    }
+  }
 }
