@@ -3,6 +3,7 @@
 
 	describe('App', function () {
 		var $rootScope,
+			helper,
 			$q,
 			$httpBackend,
 			user,
@@ -34,11 +35,12 @@
 			$provide.value('LoginService', loginService);
 		}));
 
-		beforeEach(inject(function (_$rootScope_, _$state_, _$q_, _$httpBackend_) {
+		beforeEach(inject(function (Helper, _$rootScope_, _$state_, _$q_, _$httpBackend_) {
 			$httpBackend = _$httpBackend_;
 			$rootScope = _$rootScope_;
 			$state = _$state_;
 			$q = _$q_;
+			helper = Helper;
 
 			deferredUser = $q.defer();
 			spyOn(Auth, 'currentUser').and.returnValue(deferredUser.promise);
@@ -47,13 +49,7 @@
 			authenticated = false;
 			user = {username: 'Test'};
 
-			$httpBackend.whenPOST("/users/sign_in.json").respond(user);
-			$httpBackend.expectPOST('/users/sign_in.json');
-			$httpBackend.whenGET("home/_home.html").respond({});
-			$httpBackend.expectGET('home/_home.html');
-			$httpBackend.whenGET('panel/search/_panel.search.html').respond({});
-			$httpBackend.expectGET('panel/search/_panel.search.html');
-			$httpBackend.flush();
+			helper.originalState();
 		}));
 
 		describe('On intialization', function () {
