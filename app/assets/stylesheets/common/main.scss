@@ -1,28 +1,21 @@
 .angular-google-map-container { height: 100%; width: 100%;}
 .angular-google-map { height: 100%; width: 100%;}
 
-.item{
+.items{
     height: 85%;
-        .ui .table{
-        width: 99%;
+    table{
         thead{
-            height:10%;
             th{
-                font-size:18px;
-                font-style:Arial;
-                font-weight:bold;
+                font-size:12px;
             }
         }
         tbody{
             td{
-                font-size:14px;
-                font-style:Arial;
+            font-size:12px;
             }
         }
     }
 }
-
-
 
 .pusher {
     z-index: 10 !important;
@@ -55,7 +48,7 @@
     }
 }
 
-.panel {
+.panel { 
     [ui-view="panel"] {
         height: 85%;
     }
@@ -64,7 +57,8 @@
         &.menu {
 
             &.vertical {
-                width: 400px !important;
+
+                width: 350px !important;
             }
 
 
@@ -77,7 +71,9 @@
         &.sidebar {
             &.uncover {
                 &.visible {
-                    width: 400px !important;
+
+                    width: 350px !important;
+
                 }
             }
 
