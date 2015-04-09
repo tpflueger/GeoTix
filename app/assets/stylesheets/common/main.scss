@@ -1,6 +1,19 @@
 body {
     position:fixed;
     width: 100%;
+
+    input[type="text"] {
+        font-size: 1rem !important;
+    }
+
+    textarea {
+        font-size: 1rem !important;
+    }
+
+    label {
+        font-size: 1.25rem !important;
+        text-align: left;
+    }
 }
 
 .navbar {
@@ -62,4 +75,25 @@ body {
             }
         }
     }
+}
+
+.pos-relative {
+    position: relative !important;
+}
+
+.pos-absolute {
+    position: absolute !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.left-right {
+    left: 0px;
+    right: 0px;
 }
