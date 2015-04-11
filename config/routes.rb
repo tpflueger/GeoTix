@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # nest routes for ticket creation, deletion, etc. below specific user routes.
   resources :users, only: [] do
     resources :tickets, only: [:create, :index, :destroy, :update]
+    resources :notifications, only: [:create, :index, :destroy, :update]
   end
 
   # A separate route used to retrieve all tickets, because our previously

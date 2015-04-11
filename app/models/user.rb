@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   # has-a relationship with ticket model
   has_many :tickets
+  has_many :notifications
 end
