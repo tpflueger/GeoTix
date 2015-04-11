@@ -1,3 +1,7 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'flexbox.scss';
+
 body {
     position:fixed;
     width: 100%;
@@ -96,4 +100,84 @@ body {
 .left-right {
     left: 0px;
     right: 0px;
+}
+
+.margin {
+    @include margin($defaultMargin);
+}
+
+.margin-top {
+    @include margin-top($defaultMargin);
+}
+
+.margin-right {
+    @include margin-right($defaultMargin);
+}
+
+.margin-bottom {
+    @include margin-bottom($defaultMargin);
+}
+
+.margin-left {
+    @include margin-left($defaultMargin);
+}
+
+.margin-double {
+    @include margin($defaultMargin * 2);
+}
+
+.margin-double-top {
+    @include margin-top($defaultMargin * 2);
+}
+
+.margin-double-right {
+    @include margin-right($defaultMargin * 2);
+}
+
+.margin-double-bottom {
+    @include margin-bottom($defaultMargin * 2);
+}
+
+.margin-double-left {
+    @include margin-left($defaultMargin * 2);
+}
+
+.padding {
+    @include padding($defaultPadding);
+}
+
+.padding-top {
+    @include padding-top($defaultPadding);
+}
+
+.padding-right {
+    @include padding-right($defaultPadding);
+}
+
+.padding-bottom {
+    @include padding-bottom($defaultPadding);
+}
+
+.padding-left {
+    @include padding-left($defaultPadding);
+}
+
+.padding-double {
+    @include padding($defaultPadding * 2);
+}
+
+.padding-double-top {
+    @include padding-top($defaultPadding * 2);
+}
+
+.padding-double-right {
+    @include padding-right($defaultPadding * 2);
+}
+
+.padding-double-bottom {
+    @include padding-bottom($defaultPadding * 2);
+}
+
+.padding-double-left {
+    @include padding-left($defaultPadding * 2);
 }
