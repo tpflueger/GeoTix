@@ -1,0 +1,74 @@
+@import 'mixins.scss';
+
+.flex {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  &.column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    &.center-vertical {
+      @include center-content(center);
+    }
+
+    &.center-horizontal {
+      @include center-items(center);
+    }
+
+    &.align-bottom {
+      @include justify-content(end, flex-end);
+    }
+  }
+
+  &.align-top {
+    @include justify-content(end, flex-start);
+  }
+
+  &.align-middle {
+    @include center-content(center);
+  }
+
+  &.align-bottom {
+    @include justify-content(end, flex-end);
+  }
+
+  &.item-top {
+    @include align-items(start, flex-start);
+  }
+
+  &.item-middle {
+    @include align-items(center, center);
+  }
+
+  &.item-bottom {
+    @include align-items(end, flex-end);
+  }
+
+  &.center-vertical {
+    @include center-content(center);
+  }
+
+  &.center-horizontal {
+    @include center-items(center);
+  }
+
+  &.content-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  &.content-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}

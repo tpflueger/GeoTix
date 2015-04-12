@@ -1,0 +1,69 @@
+@mixin margin($size) {
+  margin: $size;
+}
+
+@mixin margin-top($size) {
+  margin-top: $size;
+}
+
+@mixin margin-right($size) {
+  margin-right: $size;
+}
+
+@mixin margin-bottom($size) {
+  margin-bottom: $size;
+}
+
+@mixin margin-left($size) {
+  margin-left: $size;
+}
+
+@mixin padding($size) {
+  padding: $size;
+}
+
+@mixin padding-top($size) {
+  padding-top: $size;
+}
+
+@mixin padding-right($size) {
+  padding-right: $size;
+}
+
+@mixin padding-bottom($size) {
+  padding-bottom: $size;
+}
+
+@mixin padding-left($size) {
+  padding-left: $size;
+}
+
+@mixin center-content($layout) {
+  -webkit-box-pack: $layout;
+  -webkit-justify-content: $layout;
+  -ms-flex-pack: $layout;
+  justify-content: $layout;
+  text-align: $layout;
+}
+
+@mixin center-items($layout) {
+  -webkit-box-align: $layout;
+  -webkit-align-items: $layout;
+  -ms-flex-align: $layout;
+  align-items: $layout;
+}
+
+@mixin align-items($default, $flex) {
+  -webkit-box-align: $default;
+  -webkit-align-items: $flex;
+  -ms-flex-align: $default;
+  align-items: $flex;
+}
+
+@mixin justify-content($default, $flex) {
+  -webkit-box-pack: $default;
+  -webkit-justify-content: $flex;
+  -ms-flex-pack: $default;
+  justify-content: $flex;
+  text-align: $default;
+}
