@@ -48,10 +48,6 @@
 
   &.create {
     .ui {
-      &.header:first-child {
-        margin-top: 10px;
-      }
-
       &.header {
         width: 275px;
 
@@ -62,32 +58,6 @@
         &.blue-border {
           border-bottom: 2px solid #2a668c;
         }
-
-        &.margins {
-          //&.bottom {
-            //margin-bottom: 5px;
-          //}
-
-          //&.left-right {
-            //margin-left: auto;
-            //margin-right: auto;
-          //}
-        }
-      }
-
-      &.field {
-        width: 275px;
-
-        &.margins {
-          &.top {
-            margin-top: 20px;
-          }
-
-          &.left-right {
-            margin-left: auto;
-            margin-right: auto;
-          }
-        }
       }
     }
 
@@ -96,13 +66,6 @@
       max-height: 210px;
       width: 275px;
       height: 210px;
-    }
-
-    .button {
-      &.cancel {
-        margin-right: 8px;
-        vertical-align: top;
-      }
     }
   }
 }
