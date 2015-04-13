@@ -4,6 +4,8 @@ class CreateNotifications < ActiveRecord::Migration
       t.boolean :view
       t.string :user
       t.integer :user_id
+      t.string :ticket_name
+      t.integer :ticket_id
 
       t.timestamps null: false
     end

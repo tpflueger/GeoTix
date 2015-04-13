@@ -4,8 +4,12 @@ one:
   view: false
   user: MyString
   user_id: 1
+  ticket_name: MyString
+  ticket_id: 1
 
 two:
   view: false
   user: MyString
   user_id: 1
+  ticket_name: MyString
+  ticket_id: 1

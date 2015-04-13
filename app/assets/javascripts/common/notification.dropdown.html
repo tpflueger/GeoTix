@@ -1,0 +1,9 @@
+<i class="flag icon" ng-class="{active: displayNotifications() > 0 || displayNotifications() === '10+'}"></i>
+<div class="ui label notification-count" ng-class="{ten: displayNotifications() === '10+'}">
+    <div>{{displayNotifications()}}</div>
+</div>
+<div class="menu">
+    <div class="item" ng-repeat="notification in notifications | orderBy:'created_at'" ng-click="readNotification(notification)" ng-class="{unread: !notification.view, read: notification.view}">
+        {{notification.user.username}} wants Killswitch Engage{{notification.ticket_name}} -{{notification.created_at | date:'shortDate'}}
+    </div>
+</div>

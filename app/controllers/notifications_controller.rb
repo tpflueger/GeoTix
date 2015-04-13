@@ -36,6 +36,6 @@ class NotificationsController < ApplicationController
   # Define ticket parameters that can be accepted from the client
   private
   def notification_params
-    params.require(:notification).permit(:user, :user_id, :view)
+    params.require(:notification).permit(:user, :user_id, :view, :ticket_name, :ticket_id)
   end
 end

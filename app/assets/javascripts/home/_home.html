@@ -1,8 +1,8 @@
 <div class="ui left vertical inverted labeled icon sidebar menu panel">
     <div class="ui inverted red menu">
-      <a class="item" style="float:right" ui-sref="home.tickets-create">
-        <i class="plus icon"></i>
-      </a>
+        <a class="item" style="float:right" ui-sref="home.tickets-create">
+            <i class="plus icon"></i>
+        </a>
     </div>
     <div ui-view="panel"></div>
     <div class="flex item-bottom align-middle">
@@ -28,6 +28,9 @@
                 <a class="item" ng-show="signedIn()" ng-click="logout()">Log Out</a>
             </div>
         </div>
+        <notification-dropdown class="ui dropdown item notification-dropdown"
+                               notifications="user.notifications">
+        </notification-dropdown>
     </div>
     <ui-gmap-google-map center='map.center' zoom='map.zoom'>
         <ui-gmap-circle center='userCircle.center'

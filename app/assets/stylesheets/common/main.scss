@@ -26,6 +26,62 @@ body {
             &.item {
             float: right;
             }
+
+            &.item {
+                &.notification-dropdown {
+                    .flag {
+                        &.active {
+                            color: red;
+                        }
+                    }
+
+                    .menu {
+                        min-height: 36px;
+                        max-height: 275px;
+                        width: 400px;
+                        overflow-y:scroll;
+                        left: -350px;
+
+
+                        .item {
+                            &.unread {
+                                background-color: white;
+
+                            }
+
+                            &.read {
+                                background-color: lightgray;
+                            }
+                        }
+
+                        .unread {
+                            &.item:hover {
+                                background-color: white !important;
+                                font-weight: bold;
+                            }
+                        }
+
+                        .read {
+                            &.item:hover {
+                                background-color: lightgray !important;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .notification-count {
+                        padding: 1px;
+                        font-weight: bold;
+                        position: absolute;
+                        right: 14px;
+                        top: 6px;
+
+                        &.ten {
+                            right: 6px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

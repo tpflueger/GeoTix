@@ -3,9 +3,9 @@
 
   var app = angular.module('geotix');
 
-  app.controller('HomeController', ['$scope', '$timeout', 'TicketService', 'PositionService', homeController]);
+  app.controller('HomeController', ['$scope', '$timeout', 'TicketService', 'PositionService', 'NotificationService', homeController]);
 
-  function homeController($scope, $timeout, ticketService, positionService) {
+  function homeController($scope, $timeout, ticketService, positionService, notificationService) {
 
     $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 
@@ -20,6 +20,12 @@
           return _.find($scope.userTickets, { id: ticket.id });
         });
       }, function(error) {
+        console.log(error);
+      });
+
+      notificationService.getNotifications($scope.user.id).then(function(notifications) {
+        $scope.user.notifications = notifications;
+      }, function (error) {
         console.log(error);
       });
     });
