@@ -1,22 +1,20 @@
-<div class="panel create panel-top pos-absolute full-width full-height left-right">
-  <div class="pos-relative full-width full-height">
+<div class="panel create flex column center-horizontal align-top">
     <form class="ui form">
-      <h2 class="ui dividing header create blue-text blue-border margins left-right">Post a new ticket you would like to sell:</h2>
-      <div class="create field margins top left-right">
-        <label class="ui small header create blue-text margins bottom">Title</label>
+      <h2 class="ui dividing header blue-text blue-border">Post a new ticket you would like to sell:</h2>
+      <div class="field">
+        <label class="ui small blue-text header create frm lbl">Title</label>
         <input type="text" class="form-control" placeholder="name of the event" ng-model="newTicket.title">
       </div>
-      <div class="create field margins top left-right">
-        <label class="ui small header create blue-text margins bottom">Description</label>
-        <textarea id="description" class="form-control" placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
+      <div class="field">
+        <label class="ui small blue-text header create frm lbl">Description</label>
+        <textarea class="form-control" placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
       </div>
     </form>
 
-    <div class="create buttons all">
-      <div class="ui red inverted icon button create buttons cancel" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
+    <div class="margin-double-top">
+      <div class="ui red inverted icon button margin-double-right" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
         <i class="reply icon"></i> Cancel
       </div>
       <div class="ui red button" ng-click="submit()">Submit</div>
     </div>
-  </div>
 </div>

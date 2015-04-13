@@ -48,59 +48,48 @@
 
   &.create {
     .ui {
-      .header:first-child {
+      &.header:first-child {
         margin-top: 10px;
       }
+
+      &.header {
+        width: 275px;
+
+        &.blue-text {
+          color: #2a668c;
+        }
+
+        &.blue-border {
+          border-bottom: 2px solid #2a668c;
+        }
+
+        &.margins {
+          //&.bottom {
+            //margin-bottom: 5px;
+          //}
+
+          //&.left-right {
+            //margin-left: auto;
+            //margin-right: auto;
+          //}
+        }
+      }
+
+      &.field {
+        width: 275px;
+
+        &.margins {
+          &.top {
+            margin-top: 20px;
+          }
+
+          &.left-right {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
     }
-
-    .header {
-      width: 275px;
-
-      &.blue-text {
-        color: #2a668c;
-      }
-
-      &.blue-border {
-        border-bottom: 2px solid #2a668c;
-      }
-
-      &.margins {
-        &.bottom {
-          margin-bottom: 5px;
-        }
-
-        &.left-right {
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
-
-    .field {
-      width: 275px;
-
-      &.margins {
-        &.top {
-          margin-top: 20px;
-        }
-
-        &.left-right {
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
-
-    /*
-      Unable to select textarea type correctly,
-      currently using an id instead
-
-    [text-area] {
-      max-width: 275px;
-      max-height: 180px;
-      width: 275px;
-      height: 180px;
-    } */
 
     textarea#description {
       max-width: 275px;
@@ -109,11 +98,7 @@
       height: 210px;
     }
 
-    .buttons {
-      &.all {
-        margin-top: 22px;
-      }
-
+    .button {
       &.cancel {
         margin-right: 8px;
         vertical-align: top;
