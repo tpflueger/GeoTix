@@ -1,41 +1,41 @@
 @mixin margin($size) {
-  margin: $size;
+  margin: $size !important;
 }
 
 @mixin margin-top($size) {
-  margin-top: $size;
+  margin-top: $size !important;
 }
 
 @mixin margin-right($size) {
-  margin-right: $size;
+  margin-right: $size !important;
 }
 
 @mixin margin-bottom($size) {
-  margin-bottom: $size;
+  margin-bottom: $size !important;
 }
 
 @mixin margin-left($size) {
-  margin-left: $size;
+  margin-left: $size !important;
 }
 
 @mixin padding($size) {
-  padding: $size;
+  padding: $size !important;
 }
 
 @mixin padding-top($size) {
-  padding-top: $size;
+  padding-top: $size !important;
 }
 
 @mixin padding-right($size) {
-  padding-right: $size;
+  padding-right: $size !important;
 }
 
 @mixin padding-bottom($size) {
-  padding-bottom: $size;
+  padding-bottom: $size !important;
 }
 
 @mixin padding-left($size) {
-  padding-left: $size;
+  padding-left: $size !important;
 }
 
 @mixin center-content($layout) {
