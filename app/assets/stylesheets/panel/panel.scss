@@ -15,6 +15,16 @@
         height: 35px;
         z-index: 20;
       }
+
+      .flex {
+        &.align-middle {
+          height: 10%;
+
+          .button {
+            width: 50%;
+          }
+        }
+      }
     }
 
     &.sidebar {
