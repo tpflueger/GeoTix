@@ -27,8 +27,8 @@ module.exports = function(config) {
         'lib/assets/bower_components/semantic-ui/dist/semantic.js',
         'app/assets/javascripts/app.js',
         'app/assets/javascripts/**/*.js',
-        'app/assets/javascripts/test/*.js',
-        'app/assets/javascripts/test/**/*.js'
+        'app/assets/test/*.js',
+        'app/assets/test/**/*.js'
     ],
 
 
