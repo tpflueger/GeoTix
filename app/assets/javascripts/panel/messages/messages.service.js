@@ -8,7 +8,7 @@
 	function messageService($http, $q) {
 
 		function createConversation (senderId, recipientId) {
-			var url = ['conversations.json'].join('/'),
+			var url = ['conversations'].join('/'),
 				deferred = $q.defer();
 
 			$http.post(url, {sender_id: senderId, recipient_id: recipientId}).success(function(data) {
@@ -21,7 +21,7 @@
 		}
 
 		function getConversations() {
-			var url = ['conversations.json'].join('/'),
+			var url = ['conversations'].join('/'),
 				deferred = $q.defer();
 
 			$http.get(url).success(function(data) {
@@ -34,7 +34,7 @@
 		}
 
 		function getMesssages(convoId) {
-			var url = ['conversations', convoId, 'messages.json'].join('/'),
+			var url = ['conversations', convoId, 'messages'].join('/'),
 				deferred = $q.defer();
 
 			$http.get(url).success(function(data) {
@@ -47,7 +47,7 @@
 		}
 
 		function sendMessage(convoId, message) {
-			var url = ['conversations', convoId, 'messages.json'].join('/'),
+			var url = ['conversations', convoId, 'messages'].join('/'),
 				deferred = $q.defer();
 
 			$http.post(url, message).success(function(data) {
@@ -60,7 +60,7 @@
 		}
 
 		function updateMessage(convoId, messageId, message) {
-			var url = ['conversations', convoId, 'messages', messageId + '.json'].join('/'),
+			var url = ['conversations', convoId, 'messages', messageId].join('/'),
 				deferred = $q.defer();
 
 			$http.put(url, message).success(function(data) {

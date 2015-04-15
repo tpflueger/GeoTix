@@ -8,7 +8,7 @@
   function profileService ($http, $q) {
 
     function updateProfile(userId, user) {
-      var url = ['users', userId, 'update.json'].join('/'),
+      var url = ['users', userId, 'update'].join('/'),
         deferred = $q.defer();
 
       $http.put(url, user).success(function(data) {
@@ -21,7 +21,7 @@
     }
 
     function deleteProfile(userId) {
-      var url = ['users', userId, 'destroy.json'].join('/'),
+      var url = ['users', userId, 'destroy'].join('/'),
         deferred = $q.defer();
 
       $http.delete(url).success(function(data) {
