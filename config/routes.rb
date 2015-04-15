@@ -9,6 +9,10 @@ Rails.application.routes.draw do
     resources :tickets, only: [:create, :index, :destroy, :update]
   end
 
+  resources :conversations do
+    resources :messages
+  end
+
   # A separate route used to retrieve all tickets, because our previously
   # defined route for tickets:index is user-specific.
   get '/tickets', to: 'tickets#index_all'
