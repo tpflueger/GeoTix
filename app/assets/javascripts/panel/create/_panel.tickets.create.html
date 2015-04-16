@@ -17,6 +17,6 @@
     <div class="ui red inverted icon button margin-double-right" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
       <i class="reply icon"></i> Cancel
     </div>
-    <div class="ui red button" ng-click="submit()" ng-disable="createTicket.title.$invalid">Submit</div>
+    <div class="ui red button" ng-click="submit()" ng-class="{disabled: createTicket.title.$invalid}" ng-disabled="createTicket.title.$invalid">Submit</div>
   </div>
 </div>
