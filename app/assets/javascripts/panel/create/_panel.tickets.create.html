@@ -5,18 +5,36 @@
     </h2>
     <div class="field padding-double-top">
       <label class="ui small header blue-text margin-bottom">Title</label>
-      <input name="title" type="text" class="form-control" placeholder="name of the event" ng-model="newTicket.title" required />
+      <input name="title"
+        type="text"
+        class="form-control"
+        placeholder="name of the event"
+        ng-model="newTicket.title"
+        ng-minlength="3"
+        ng-maxlength="255"
+        required />
     </div>
     <div class="field padding-double-top">
       <label class="ui small blue-text header margin-bottom">Description</label>
-      <textarea id="create-description" class="form-control" placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
+      <textarea id="create-description"
+        class="form-control"
+        placeholder="a description of seat locations, event time, reason for selling, etc."
+        ng-model="newTicket.description">
+      </textarea>
     </div>
   </ng-form>
 
   <div class="padding-double-top">
-    <div class="ui red inverted icon button margin-double-right" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
+    <div class="ui red inverted icon button margin-double-right"
+      ui-sref="home.tickets"
+      ng-class="{ active: $state.$current.data.active === 'tickets'}">
       <i class="reply icon"></i> Cancel
     </div>
-    <div class="ui red button" ng-click="submit()" ng-class="{disabled: createTicket.title.$invalid}" ng-disabled="createTicket.title.$invalid">Submit</div>
+    <button class="ui red button"
+      ng-click="submit()"
+      ng-class="{disabled: createTicket.title.$invalid}"
+      ng-disabled="createTicket.title.$invalid">
+      Submit
+    </div>
   </div>
 </div>
