@@ -47,34 +47,25 @@
   }
 
   &.create {
+    .ui {
+      &.header {
+        width: 275px;
 
-    .header {
-      margin: 0px auto !important;
-      padding: 0px;
-      width: 275px;
-    }
+        &.blue-text {
+          color: #2a668c;
+        }
 
-    .field {
-      margin: 0px auto !important;
-      padding: 0px;
-      width: 275px;
-    }
-
-    [text-area] {
-      max-height: 160px;
-      max-width: 275px;
-      width: 275px;
-      margin: 0px auto;
-    }
-
-    .form {
-      &.btns {
-        padding: 16px;
-
-        &.cancel {
-          margin-right: 15px;
+        &.blue-border {
+          border-bottom: 2px solid #2a668c;
         }
       }
+    }
+
+    textarea#create-description {
+      max-width: 275px;
+      max-height: 210px;
+      width: 275px;
+      height: 210px;
     }
   }
 }
