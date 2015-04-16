@@ -1,0 +1,22 @@
+<h2>User Tickets</h2>
+<div class="items">
+ <table class="ui table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="ticket in userTickets">
+      <td>{{ticket.title}}</td>
+      <td>{{ticket.description}}</td>
+      <td>{{ticket.is_active}}</td>
+      <td><button class="ui red button">Delete</button></td>
+    </tr>
+  </tbody>
+ </table>
+
+</div>

@@ -20,6 +20,24 @@ body {
     }
 }
 
+.items{
+    height: 85%;
+    table{
+        thead{
+            th{
+                font-size:13px;
+                font-weight: bold;
+                background-color: grey;
+            }
+        }
+        tbody{
+            td{
+            font-size:12px;
+            }
+        }
+    }
+}
+
 .navbar {
     .ui {
         &.dropdown {
