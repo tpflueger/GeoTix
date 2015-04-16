@@ -10,7 +10,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="ticket in userTickets">
+    <tr ng-repeat="ticket in userTickets"
+      ui-sref="home.ticket-details">
       <td>{{ticket.title}}</td>
       <td>{{ticket.description}}</td>
       <td>{{ticket.is_active}}</td>

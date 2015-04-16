@@ -56,14 +56,28 @@
                     }
                 }
             })
-            .state('home.ticket', {
+            .state('home.ticket-details', {
                 url: '/tickets/:ticketId',
                 views: {
-                    'panel@home': {
-                        templateUrl: 'auth/_login.html'
+                    'panel@': {
+                        templateUrl: 'panel/details/_panel.tickets.details.html'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/details/_panel.tickets.details.html'
                     }
+                },
+                data: {
+                  active: 'ticket-details'
                 }
             })
+            //.state('home.ticket', {
+                //url: '/tickets/:ticketId',
+                //views: {
+                    //'panel@home': {
+                        //templateUrl: 'auth/_login.html'
+                    //}
+                //}
+            //})
             .state('profile', {
                 url: '/profile',
                 templateUrl: 'profile/_profile.html',
