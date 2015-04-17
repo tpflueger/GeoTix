@@ -11,7 +11,7 @@
   </thead>
   <tbody>
     <tr ng-repeat="ticket in userTickets"
-      ui-sref="home.ticket-details">
+      ui-sref="home.ticket-details({ticket_id:ticket.id})">
       <td>{{ticket.title}}</td>
       <td>{{ticket.description}}</td>
       <td>{{ticket.is_active}}</td>
