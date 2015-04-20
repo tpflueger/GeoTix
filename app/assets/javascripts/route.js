@@ -60,10 +60,12 @@
                 url: '/tickets/:ticket_id',
                 views: {
                     'panel@': {
-                        templateUrl: 'panel/details/_panel.ticket.details.html'
+                        templateUrl: 'panel/details/_panel.ticket.details.html',
+                        controller: 'TicketDetailsController'
                     },
                     'panel': {
-                        templateUrl: 'panel/details/_panel.ticket.details.html'
+                        templateUrl: 'panel/details/_panel.ticket.details.html',
+                        controller: 'TicketDetailsController'
                     }
                 },
                 data: {

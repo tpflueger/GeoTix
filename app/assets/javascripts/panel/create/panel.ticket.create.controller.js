@@ -21,6 +21,9 @@
       }, function(error) {
         console.log(error);
       });
+
+      $scope.newTicket.title = "";
+      $scope.newTicket.description = "";
     };
   }
 })();
