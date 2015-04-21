@@ -88,4 +88,36 @@
       font-size: 15px;
     }
   }
+
+  &.user-tickets {
+    .ui {
+      &.header {
+        width: 275px;
+      }
+
+      &.table {
+        width: 275px;
+      }
+
+      &.button {
+        width: 48px;
+      }
+    }
+
+    table {
+      thead {
+        th {
+          font-size:13px;
+          font-weight: bold;
+          background-color: grey;
+        }
+      }
+
+      tbody {
+        td {
+          font-size:12px;
+        }
+      }
+    }
+  }
 }

@@ -1,10 +1,10 @@
 <div class="panel create flex column center-horizontal align-top">
-  <ng-form name="createTicket" class="ui form padding-bottom">
-    <h2 class="ui dividing header blue-text blue-border margin-double-top margin-bottom flex align-middle">
+  <ng-form name="createTicket" class="ui form margin-bottom">
+    <h2 class="ui dividing header teal margin-double-top margin-bottom flex align-middle">
       Post a new ticket you would like to sell:
     </h2>
     <div class="field padding-double-top">
-      <label class="ui small header blue-text margin-bottom">Title</label>
+      <label class="ui small teal header margin-bottom">Title</label>
       <input name="title"
         type="text"
         class="form-control"
@@ -14,8 +14,8 @@
         ng-maxlength="255"
         required />
     </div>
-    <div class="field padding-double-top">
-      <label class="ui small blue-text header margin-bottom">Description</label>
+    <div class="field margin-double-top">
+      <label class="ui teal small header margin-bottom">Description</label>
       <textarea id="create-description"
         class="form-control"
         placeholder="a description of seat locations, event time, reason for selling, etc."
@@ -24,7 +24,7 @@
     </div>
   </ng-form>
 
-  <div class="padding-double-top">
+  <div class="margin-double-top">
     <div class="ui red inverted icon button margin-double-right"
       ui-sref="home.tickets"
       ng-class="{ active: $state.$current.data.active === 'tickets'}">

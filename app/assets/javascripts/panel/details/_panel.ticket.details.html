@@ -3,10 +3,14 @@
     Ticket Details
   </h2>
 
-  <div class="ui left aligned top attached tertiary segment">
+  <div class="ui left aligned top attached tertiary segment margin-double-top">
     <p class="title padding-double">{{ticket.title}}</p>
   </div>
-  <div class="ui left aligned bottom attached segment">
+  <div class="ui left aligned bottom attached segment margin-bottom">
     <p class="description padding-double">{{ticket.description}}</p>
   </div>
+
+  <button class="ui red button margin-double-top" ng-click="goto(ticket)">
+    Zoom on Ticket
+  </button>
 </div>
