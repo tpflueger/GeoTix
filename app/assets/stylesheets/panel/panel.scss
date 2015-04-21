@@ -98,24 +98,19 @@
       &.table {
         width: 275px;
       }
-
-      &.button {
-        width: 48px;
-      }
     }
 
     table {
       thead {
         th {
-          font-size:13px;
+          font-size:14px;
           font-weight: bold;
-          background-color: grey;
         }
       }
 
       tbody {
         td {
-          font-size:12px;
+          font-size:14px;
         }
       }
     }

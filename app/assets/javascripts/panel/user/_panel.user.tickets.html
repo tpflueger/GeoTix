@@ -2,21 +2,17 @@
   <h2 class="ui dividing teal header margin-double-top margin-bottom flex align-middle">
     User Tickets
   </h2>
-  <table class="ui table">
+  <table class="ui table margin-double-top">
     <thead>
       <tr>
         <th>Title</th>
-        <th>Description</th>
-        <th>Status</th>
-        <th></th>
+        <th>Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr ng-repeat="ticket in userTickets"
         ui-sref="home.ticket-details({ticket_id:ticket.id})">
         <td>{{ticket.title}}</td>
-        <td>{{ticket.description}}</td>
-        <td>{{ticket.is_active}}</td>
         <td><button class="ui red button">Delete</button></td>
       </tr>
     </tbody>
