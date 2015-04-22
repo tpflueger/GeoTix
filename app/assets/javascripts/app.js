@@ -3,9 +3,9 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog', 'uiGmapgoogle-maps']);
 
-  app.run(['$rootScope', 'Auth', '$state', '$timeout', 'LoginService', controller]);
+  app.run(['$rootScope', 'Auth', '$state', 'LoginService', controller]);
 
-  function controller($rootScope, Auth, $state, $timeout, loginService) {
+  function controller($rootScope, Auth, $state, loginService) {
     $rootScope.$state = $state;
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;

@@ -1,11 +1,15 @@
 <div class="ui left vertical inverted labeled icon sidebar menu panel">
     <div class="ui inverted red menu">
-
+      <a class="item" style="float:right" ui-sref="home.tickets-create">
+        <i class="plus icon"></i>
+      </a>
     </div>
     <div ui-view="panel"></div>
-    <div class="ui buttons">
-        <div class="ui red button" ui-sref="home.search" ng-class="{ active: $state.$current.data.active === 'search'}">Tickets</div>
-        <div class="ui red button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">My Tickets</div>
+    <div class="flex item-bottom align-middle">
+        <div class="ui buttons full-width">
+            <div class="ui red button" ui-sref="home.search" ng-class="{ active: $state.$current.data.active === 'search'}">Tickets</div>
+            <div class="ui red button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">My Tickets</div>
+        </div>
     </div>
 </div>
 <div class="container pusher">
