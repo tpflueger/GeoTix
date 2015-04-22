@@ -18,6 +18,7 @@
 
       ticketService.createUserTicket($scope.user.id, ticket).then(function(data) {
         $scope.userTickets.push(data);
+        $scope.$state.go('home.ticket-details', { ticket_id: data.id });
       }, function(error) {
         console.log(error);
       });

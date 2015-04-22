@@ -71,7 +71,9 @@
 
   &.details {
     .ui {
-      width: 275px;
+      &.header {
+        width: 275px;
+      }
 
       &.segment {
         width: 275px;
@@ -84,8 +86,16 @@
     }
 
     .description {
-      width: 275px;
       font-size: 15px;
+    }
+
+    .no-description {
+      font-size: 15px;
+      color: gray;
+    }
+
+    .date-posted {
+      font-size: 13px;
     }
   }
 
@@ -103,14 +113,14 @@
     table {
       thead {
         th {
-          font-size:14px;
+          font-size: 14px;
           font-weight: bold;
         }
       }
 
       tbody {
         td {
-          font-size:14px;
+          font-size: 14px;
         }
       }
     }

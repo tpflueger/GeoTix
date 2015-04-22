@@ -6,13 +6,14 @@
     <thead>
       <tr>
         <th>Title</th>
-        <th>Actions</th>
+        <th>Date Posted</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="ticket in userTickets"
-        ui-sref="home.ticket-details({ticket_id:ticket.id})">
-        <td>{{ticket.title}}</td>
+      <tr ng-repeat="ticket in userTickets">
+        <td ui-sref="home.ticket-details({ticket_id:ticket.id})">{{ticket.title}}</td>
+        <td>{{ticket.created_at | date: 'shortDate'}}</td>
         <td><button class="ui red button">Delete</button></td>
       </tr>
     </tbody>
