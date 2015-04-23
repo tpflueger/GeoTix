@@ -12,16 +12,16 @@
                 abstract: true,
                 url: '/home',
                 controller: 'HomeController',
-                templateUrl: '_home.html'
+                templateUrl: 'home/_home.html'
             })
             .state('home.search', {
                 url: '/search',
                 views: {
                     'panel@': {
-                        templateUrl: '_panel.search.html'
+                        templateUrl: 'panel/search/_panel.search.html'
                     },
                     'panel': {
-                        templateUrl: '_panel.search.html'
+                        templateUrl: 'panel/search/_panel.search.html'
                     }
                 },
                 data: {
@@ -33,10 +33,10 @@
                 controller: 'ProfileController',
                 views: {
                     'panel@': {
-                        templateUrl: '_panel.user.tickets.html'
+                        templateUrl: 'panel/user/_panel.user.tickets.html'
                     },
                     'panel': {
-                        templateUrl: '_panel.user.tickets.html'
+                        templateUrl: 'panel/user/_panel.user.tickets.html'
                     }
                 },
                 data: {
@@ -47,12 +47,10 @@
                 url: '/tickets/create',
                 views: {
                     'panel@': {
-                        templateUrl: '_panel.tickets.create.html',
-                        controller: 'TicketCreateController'
+                        //templateUrl: 'auth/_login.html'
                     },
                     'panel': {
-                        templateUrl: '_panel.tickets.create.html',
-                        controller: 'TicketCreateController'
+                        //templateUrl: ''
                     }
                 }
             })
@@ -60,13 +58,13 @@
                 url: '/tickets/:ticketId',
                 views: {
                     'panel@home': {
-                        templateUrl: '_login.html'
+                        templateUrl: 'auth/_login.html'
                     }
                 }
             })
             .state('profile', {
                 url: '/profile',
-                templateUrl: '_profile.html',
+                templateUrl: 'profile/_profile.html',
                 controller: 'ProfileController'
             });
 

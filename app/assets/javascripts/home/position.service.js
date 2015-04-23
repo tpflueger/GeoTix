@@ -3,9 +3,9 @@
 
     var app = angular.module('geotix');
 
-    app.factory('PositionService', ['$q', '$window', positionService]);
+    app.factory('PositionService', ['$q', '$window', '$timeout', positionService]);
 
-    function positionService($q, $window) {
+    function positionService($q, $window, $timeout) {
         function getCurrentPosition () {
             var userCircle = null,
                 deferred = $q.defer();

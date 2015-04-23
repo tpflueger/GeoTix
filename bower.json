@@ -8,8 +8,7 @@
       "lodash": "latest",
       "semantic-ui": "latest",
       "ngDialog": "latest",
-      "angular-google-maps": "latest",
-      "angular-mocks": "latest"
+      "angular-google-maps": "latest"
     }
   },
   "vendor": {
