@@ -23,7 +23,6 @@ gem 'angular-rails-templates', '~> 0.1.3'
 gem 'angular_rails_csrf'
 gem 'devise', '~> 3.4.0'
 gem 'bower-rails'
-gem 'rails_12factor'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
