@@ -30,6 +30,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
+  # RSpec used for server-side unit testing
+  gem 'rspec-rails'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -39,4 +42,3 @@ group :development, :test do
   # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end
-
