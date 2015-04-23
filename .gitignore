@@ -3,6 +3,3 @@
 /log
 *.log
 /.idea
-/lib/assets/bower_components/**
-/node_modules/**
-/lib/assets/**
