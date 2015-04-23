@@ -12,7 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= require semantic-ui
  *= require ngDialog
  *= require common/main.scss
  *= require home/home.scss
