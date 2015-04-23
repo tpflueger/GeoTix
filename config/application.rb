@@ -19,7 +19,13 @@ module Geotix
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.before_initialize do |app|
+      require 'sprockets'
+      require 'angular-rails-templates'
 
+      Sprockets::Engines #force autoloading
+      Sprockets.register_engine '.html', AngularRailsTemplates::Template
+    end
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
