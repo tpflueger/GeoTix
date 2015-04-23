@@ -1,5 +1,33 @@
 ## RELEASE NOTES
 
+### Version 1.12.0 - April 13, 2015
+
+**Enhancements**
+- **Visibility** - Adds updated visibility module from `2.x` channel. Visibility will automatically refresh by default after images load on page refresh. Fixes issues with element positions after image loading.
+- **Sticky** - Adds sticky module from `2.x` branch. Sticky elements now use pub/sub with drastically improved performance. Sticky elements that do not fit on page will now scroll at the same speed as the page is scrolled instead of slower.
+
+**Changes**
+- **Popup** - Popup no longer produces a console error when it cannot find an adequate position in the browser viewport.
+
+**Bugs**
+- **Build Tools** - Fixes issue with component glob matching twice (causing build to include file twice) if duplicate values found in `semantic.json` component.
+- **Input** - Backports fix from `2.x` for `ui fluid input` not appearing correctly.
+- **Visibility** - Fixed issue where `precache` behavior was missing from visibility causing `image` lazy loading to fail
+
+### Version 1.11.8 - April 13, 2015
+
+**Bugs**
+- **Build Tools** - Fixed `npm install` without `semantic.json` to merge changes with site theme and packaged themes in a similar fashion to `npm update`
+- **Build** - `gulp build` now properly warns against missing `semantic.json` **Thanks @rudyrk**
+
+### Version 1.11.7 - April 13, 2015
+
+**Bugs**
+
+- **Sticky** - Fixes errant `console.log` statement appearing in source
+- **Card** - Fixes card `flex` display issues in IE
+- **Build Tools** - Fixes issue where `npm update` install scripts would remove custom themes from `src/themes/` during copy after updating Semantic UI
+
 ### Version 1.11.6 - March 27, 2015
 
 More critical bug backports from `2.x` branch, as well as fixes for browserify
