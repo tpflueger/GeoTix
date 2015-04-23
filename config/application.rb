@@ -26,7 +26,7 @@ module Geotix
       Sprockets::Engines #force autoloading
       Sprockets.register_engine '.html', AngularRailsTemplates::Template
     end
-    config.assets.paths << Rails.root.join("lib","assets","bower_components","semantic-ui", "themes", "default", "assets", "fonts")
+    config.assets.paths << Rails.root.join("geotix", "lib","assets","bower_components","semantic-ui", "themes", "default", "assets", "fonts")
     
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
