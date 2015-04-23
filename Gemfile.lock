@@ -83,6 +83,7 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
       mini_portile (~> 0.6.0)
+    non-stupid-digest-assets (1.0.4)
     orm_adapter (0.5.0)
     pg (0.18.1)
     rack (1.6.0)
@@ -162,6 +163,7 @@ DEPENDENCIES
   byebug
   devise (~> 3.4.0)
   jbuilder (~> 2.0)
+  non-stupid-digest-assets
   pg
   rails (= 4.2.0)
   sass-rails (~> 5.0)
