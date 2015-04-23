@@ -1,22 +1,40 @@
-<div class="panel create panel-top pos-absolute full-width full-height left-right">
-  <div class="pos-relative full-width full-height">
-    <form class="ui create form top">
-      <h2 class="ui blue dividing header">Post a new ticket you would like to sell:</h2>
-      <div class="field">
-        <label class="ui small blue header create frm lbl">Title</label>
-        <input type="text" class="form-control" placeholder="name of the event" ng-model="newTicket.title">
-      </div>
-      <div class="field">
-        <label class="ui small blue header create frm lbl">Description</label>
-        <textarea class="form-control" placeholder="a description of seat locations, event time, reason for selling, etc." ng-model="newTicket.description"></textarea>
-      </div>
-    </form>
-
-    <div class="create form btns">
-      <div class="ui red inverted icon button create frm btns cancel" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">
-        <i class="reply icon"></i> Cancel
-      </div>
-      <div class="ui red button" ng-click="submit()">Submit</div>
+<div class="panel create flex column center-horizontal align-top">
+  <ng-form name="createTicket" class="ui form margin-bottom">
+    <h2 class="ui dividing header teal margin-double-top margin-bottom flex align-middle">
+      Post a new ticket you would like to sell:
+    </h2>
+    <div class="field margin-double-top">
+      <label class="ui small teal header margin-bottom">Title</label>
+      <input name="title"
+        type="text"
+        class="form-control"
+        placeholder="name of the event"
+        ng-model="newTicket.title"
+        ng-minlength="3"
+        ng-maxlength="255"
+        required />
     </div>
+    <div class="field margin-double-top">
+      <label class="ui teal small header margin-bottom">Description</label>
+      <textarea id="create-description"
+        class="form-control"
+        placeholder="a description of seat locations, event time, reason for selling, etc."
+        ng-model="newTicket.description">
+      </textarea>
+    </div>
+  </ng-form>
+
+  <div class="margin-double-top">
+    <div class="ui red inverted icon button margin-double-right"
+      ui-sref="home.tickets"
+      ng-class="{ active: $state.$current.data.active === 'tickets'}">
+      <i class="reply icon"></i> Cancel
+    </div>
+    <button class="ui red button"
+      ng-click="submit()"
+      ng-class="{disabled: createTicket.title.$invalid}"
+      ng-disabled="createTicket.title.$invalid">
+      Submit
+    </button>
   </div>
 </div>

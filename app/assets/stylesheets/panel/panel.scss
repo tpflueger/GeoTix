@@ -47,32 +47,80 @@
   }
 
   &.create {
+    .ui {
+      &.header {
+        width: 275px;
 
-    .header {
-      margin: 0px auto !important;
-      padding: 0px;
-      width: 275px;
+        &.blue-text {
+          color: #2a668c;
+        }
+
+        &.blue-border {
+          border-bottom: 2px solid #2a668c;
+        }
+      }
     }
 
-    .field {
-      margin: 0px auto !important;
-      padding: 0px;
-      width: 275px;
-    }
-
-    [text-area] {
-      max-height: 160px;
+    textarea#create-description {
       max-width: 275px;
+      max-height: 210px;
       width: 275px;
-      margin: 0px auto;
+      height: 210px;
+    }
+  }
+
+  &.details {
+    .ui {
+      &.header {
+        width: 275px;
+      }
+
+      &.segment {
+        width: 275px;
+      }
     }
 
-    .form {
-      &.btns {
-        padding: 16px;
+    .title {
+      width: 275px;
+      font-size: 20px;
+    }
 
-        &.cancel {
-          margin-right: 15px;
+    .description {
+      font-size: 15px;
+    }
+
+    .no-description {
+      font-size: 15px;
+      color: gray;
+    }
+
+    .date-posted {
+      font-size: 13px;
+    }
+  }
+
+  &.user-tickets {
+    .ui {
+      &.header {
+        width: 275px;
+      }
+
+      &.table {
+        width: 275px;
+      }
+    }
+
+    table {
+      thead {
+        th {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+
+      tbody {
+        td {
+          font-size: 14px;
         }
       }
     }
