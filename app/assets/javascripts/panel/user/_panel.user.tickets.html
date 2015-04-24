@@ -2,20 +2,22 @@
   <h2 class="ui dividing teal header margin-double-top margin-bottom flex align-middle">
     User Tickets
   </h2>
-  <table class="ui table margin-double-top">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Date Posted</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="ticket in userTickets">
-        <td ui-sref="home.ticket-details({ticket_id:ticket.id})">{{ticket.title}}</td>
-        <td>{{ticket.created_at | date: 'shortDate'}}</td>
-        <td><button class="ui red button">Delete</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="pos-absolute margin-double">
+    <table class="ui table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Date Posted</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="ticket in userTickets">
+          <td ui-sref="home.ticket-details({ticket_id:ticket.id})" class="title">{{ticket.title}}</td>
+          <td>{{ticket.created_at | date: 'shortDate'}}</td>
+          <td><button class="ui red button">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

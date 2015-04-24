@@ -20,6 +20,13 @@ body {
     }
 }
 
+.pusher {
+    &.dimmed {
+        -webkit-transform: translate3d(350px, 0, 0) !important;
+        transform: translate3d(350px, 0, 0) !important;
+    }
+}
+
 .navbar {
     .ui {
         &.dropdown {

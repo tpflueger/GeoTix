@@ -30,7 +30,7 @@
     &.sidebar {
       &.uncover {
         &.visible {
-          width: 300px !important;
+          width: 350px !important;
         }
       }
 
@@ -38,8 +38,8 @@
         &.sidebar {
           z-index: 5;
           .pusher {
-            -webkit-transform: translate3d(300px, 0, 0) !important;
-            transform: translate3d(300px, 0, 0) !important;
+            -webkit-transform: translate3d(350px, 0, 0) !important;
+            transform: translate3d(350px, 0, 0) !important;
           }
         }
       }
@@ -102,12 +102,18 @@
   &.user-tickets {
     .ui {
       &.header {
-        width: 275px;
+        width: 325px;
       }
 
       &.table {
-        width: 275px;
+        width: 325px;
+        table-layout: fixed;
       }
+    }
+
+    .pos-absolute {
+      overflow: auto;
+      height: 90%;
     }
 
     table {
@@ -121,6 +127,11 @@
       tbody {
         td {
           font-size: 14px;
+
+          &.title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
         }
       }
     }
