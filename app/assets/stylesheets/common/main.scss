@@ -20,6 +20,13 @@ body {
     }
 }
 
+.pusher {
+    &.dimmed {
+        -webkit-transform: translate3d(350px, 0, 0) !important;
+        transform: translate3d(350px, 0, 0) !important;
+    }
+}
+
 .navbar {
     .ui {
         &.dropdown {
@@ -180,4 +187,14 @@ body {
 
 .padding-double-left {
     @include padding-left($defaultPadding * 2);
+}
+
+.float {
+    &.left {
+        float: left !important;
+    }
+
+    &.right {
+        float: right !important;
+    }
 }

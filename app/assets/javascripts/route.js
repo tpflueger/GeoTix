@@ -26,6 +26,11 @@
                 },
                 data: {
                     active: 'search'
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.clearContext();
+                    }
                 }
             })
             .state('home.tickets', {
@@ -41,6 +46,11 @@
                 },
                 data: {
                     active: 'tickets'
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.clearContext();
+                    }
                 }
             })
             .state('home.tickets-create', {
@@ -54,13 +64,31 @@
                         templateUrl: 'panel/create/_panel.tickets.create.html',
                         controller: 'TicketCreateController'
                     }
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.clearContext();
+                    }
                 }
             })
-            .state('home.ticket', {
-                url: '/tickets/:ticketId',
+            .state('home.ticket-details', {
+                url: '/tickets/:ticket_id',
                 views: {
-                    'panel@home': {
-                        templateUrl: 'auth/_login.html'
+                    'panel@': {
+                        templateUrl: 'panel/details/_panel.ticket.details.html',
+                        controller: 'TicketDetailsController'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/details/_panel.ticket.details.html',
+                        controller: 'TicketDetailsController'
+                    }
+                },
+                data: {
+                    active: 'ticket-details'
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.setContext('ticketDetails');
                     }
                 }
             })

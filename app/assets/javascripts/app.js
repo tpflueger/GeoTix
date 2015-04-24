@@ -3,12 +3,13 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog', 'uiGmapgoogle-maps']);
 
-  app.run(['$rootScope', 'Auth', '$state', '$timeout', 'LoginService', controller]);
+  app.run(['$rootScope', 'Auth', '$state', 'LoginService', 'ContextService', controller]);
 
-  function controller($rootScope, Auth, $state, $timeout, loginService) {
+  function controller($rootScope, Auth, $state, loginService, contextService) {
     $rootScope.$state = $state;
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;
+    $rootScope.contextService =  contextService;
 
     $rootScope.signedIn = Auth.isAuthenticated;
     $rootScope.logout = Auth.logout;
@@ -43,5 +44,12 @@
       }
       loginService.openDialog();
     };
+
+    $rootScope.previousState;
+    $rootScope.currentState;
+    $rootScope.$on('$stateChangeSuccess', function(ev, to, toParams, from, fromParams) {
+      $rootScope.previousState = from.name;
+      $rootScope.currentState = to.name;
+    });
   }
 })();
