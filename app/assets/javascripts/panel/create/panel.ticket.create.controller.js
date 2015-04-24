@@ -3,7 +3,7 @@
 
   var app = angular.module('geotix');
 
-  app.controller('TicketCreateController', ['$scope', 'TicketService', ticketCreateController]);
+  app.controller('TicketCreateController', ['$scope', 'TicketService', 'ContextService', ticketCreateController]);
 
   function ticketCreateController($scope, ticketService) {
     $scope.newTicket = {};

@@ -26,6 +26,11 @@
                 },
                 data: {
                     active: 'search'
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.clearContext();
+                    }
                 }
             })
             .state('home.tickets', {
@@ -41,6 +46,11 @@
                 },
                 data: {
                     active: 'tickets'
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.clearContext();
+                    }
                 }
             })
             .state('home.tickets-create', {
@@ -53,6 +63,11 @@
                     'panel': {
                         templateUrl: 'panel/create/_panel.tickets.create.html',
                         controller: 'TicketCreateController'
+                    }
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.clearContext();
                     }
                 }
             })
@@ -70,16 +85,13 @@
                 },
                 data: {
                     active: 'ticket-details'
+                },
+                resolve: {
+                    setContext: function(ContextService) {
+                        return ContextService.setContext('ticketDetails');
+                    }
                 }
             })
-            //.state('home.ticket', {
-                //url: '/tickets/:ticketId',
-                //views: {
-                    //'panel@home': {
-                        //templateUrl: 'auth/_login.html'
-                    //}
-                //}
-            //})
             .state('profile', {
                 url: '/profile',
                 templateUrl: 'profile/_profile.html',

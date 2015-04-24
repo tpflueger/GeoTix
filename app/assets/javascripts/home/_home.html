@@ -1,14 +1,18 @@
 <div class="ui left vertical inverted labeled icon sidebar menu panel">
     <div class="ui inverted red menu">
-      <a class="item" style="float:right" ui-sref="home.tickets-create">
+      <a class="item float left" ng-repeat="navigation in contextService.getContext()" ui-sref="{{navigation.url}}">
+          <i class="reply icon"></i>
+      </a>
+      <a class="item float right" ui-sref="home.tickets-create">
         <i class="plus icon"></i>
       </a>
     </div>
     <div ui-view="panel"></div>
     <div class="flex item-bottom align-middle">
         <div class="ui buttons full-width">
-            <div class="ui red button" ui-sref="home.search" ng-class="{ active: $state.$current.data.active === 'search'}">Tickets</div>
-            <div class="ui red button" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">My Tickets</div>
+            <div class="ui red button third" ui-sref="home.search" ng-class="{ active: $state.$current.data.active === 'search'}">Tickets</div>
+            <div class="ui red button third" ui-sref="home.tickets" ng-class="{ active: $state.$current.data.active === 'tickets'}">My Tickets</div>
+            <div class="ui red button third" ui-sref="home.messages" ng-class="{ active: $state.$current.data.active === 'messages'}">Messages</div>
         </div>
     </div>
 </div>

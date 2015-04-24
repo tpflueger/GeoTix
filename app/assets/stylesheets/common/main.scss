@@ -188,3 +188,13 @@ body {
 .padding-double-left {
     @include padding-left($defaultPadding * 2);
 }
+
+.float {
+    &.left {
+        float: left !important;
+    }
+
+    &.right {
+        float: right !important;
+    }
+}
