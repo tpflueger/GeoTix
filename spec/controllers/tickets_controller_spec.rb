@@ -99,29 +99,17 @@ RSpec.describe TicketsController, type: :controller do
       end
     end
 
-# Currently unable to test with invalid params. At the moment
-# we are not performing any server-side data validation.
-=begin
+    # Currently unable to test with invalid params. At the moment
+    # we are not performing any server-side data validation.
     context "with invalid params" do
-
-      let(:params) {{
-        format: :json,
-        :user_id => subject.current_user.id,
-        :ticket => invalid_ticket
-      }}
-
       it "assigns a newly created but unsaved ticket as @ticket" do
-        post :create, params
-        expect(assigns(:ticket)).to be_a_new(Ticket)
-        expect(assigns(:ticket)).not_to be_persisted
+        skip("no data validation to test at this time")
       end
 
       it "re-renders the 'new' template" do
-        post :create, params
-        expect(response).to render_template("new")
+        skip("no data validation to test at this time")
       end
     end
-=end
   end
 
   describe "PUT #update" do
@@ -150,23 +138,17 @@ RSpec.describe TicketsController, type: :controller do
       end
     end
 
-# Currently unable to test with invalid params. At the moment
-# we are not performing any server-side data validation.
-=begin
+    # Currently unable to test with invalid params. At the moment
+    # we are not performing any server-side data validation.
     context "with invalid params" do
       it "assigns the ticket as @ticket" do
-        ticket = Ticket.create! user_tickets
-        put :update, {:id => ticket.to_param, :ticket => invalid_attributes}
-        expect(assigns(:ticket)).to eq(ticket)
+        skip("no data validation to test at this time")
       end
 
       it "re-renders the 'edit' template" do
-        ticket = Ticket.create! user_tickets
-        put :update, {:id => ticket.to_param, :ticket => invalid_attributes}
-        expect(response).to render_template("edit")
+        skip("no data validation to test at this time")
       end
     end
-=end
   end
 
   describe "DELETE #destroy" do
