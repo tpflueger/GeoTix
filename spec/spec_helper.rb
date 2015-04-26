@@ -12,19 +12,29 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'devise'
 require 'rspec/rails'
+require 'json_spec'
+require 'database_cleaner'
 require 'support/controller_macros'
 
 RSpec.configure do |config|
   config.include Devise::TestHelpers, :type => :controller
+  config.include JsonSpec::Helpers
+
   config.extend ControllerMacros, :type => :controller
 
-  # rspec-mocks config goes here. You can use an alternate test double
-  # library (such as bogus or mocha) by changing the `mock_with` option here.
-  config.mock_with :rspec do |mocks|
-    # Prevents you from mocking or stubbing a method that does not exist on
-    # a real object. This is generally recommended, and will default to
-    # `true` in RSpec 4.
-    mocks.verify_partial_doubles = true
+  # The following 3 blocks use DatabaseCleaner for easy cleaning
+  # of the test db between individual describe blocks
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
   end
 
   # These two settings work together to allow you to limit a spec run

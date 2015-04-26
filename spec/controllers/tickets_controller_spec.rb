@@ -1,136 +1,196 @@
 require 'rails_helper'
 
 RSpec.describe TicketsController, type: :controller do
-  let(:valid_ticket_attributes) { {
-    "title" => "Concert Ticket",
-    "description" => "ticket to an awesome concert",
-    "lat" => "42",
-    "long" => "69",
-    "is_active" => true
-  } }
+  login_user
 
-  let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+  let(:user_tickets) {
+    [
+      { "user_id"     => subject.current_user.id,
+        "title"       => "Concert Ticket",
+        "description" => "ticket to an awesome concert",
+        "lat"         => "42",
+        "long"        => "69",
+        "is_active"   => true },
+      { "user_id"     => subject.current_user.id,
+        "title"       => "Awesome Event",
+        "description" => "loads of tickets for sale",
+        "lat"         => "94",
+        "long"        => "97",
+        "is_active"   => false }
+    ]
   }
 
+  let(:other_tickets) {
+    [
+      { "user_id"     => 1994,
+        "title"       => "Ticket for Sale",
+        "description" => "ticket to some event",
+        "lat"         => "20",
+        "long"        => "21",
+        "is_active"   => true },
+      { "user_id"     => 1997,
+        "title"       => "Weird Al Show",
+        "description" => "got too excited, bought too many tickets, must sell",
+        "lat"         => "05",
+        "long"        => "04",
+        "is_active"   => false }
+    ]
+  }
+
+  let(:all_tickets) {
+    user_tickets + other_tickets
+  }
+
+  let(:new_attributes) {{
+    "user_id"     => subject.current_user.id,
+    "title"       => "New Values",
+    "description" => "new description, way better than before",
+    "lat"         => "33",
+    "long"        => "44",
+    "is_active"   => false
+  }}
+
+
   describe "GET #index" do
-    login_user
-
-    it "assigns all user tickets as @tickets", :focus do
+    it "responds with all user tickets as json" do
       expect(subject.current_user).not_to be_nil
+      tickets = Ticket.create! user_tickets
+      Ticket.create! other_tickets
 
-      ticket = Ticket.create! valid_ticket_attributes
-      get :index, {}
-      expect(assigns(:tickets)).to eq([ticket])
+      get :index, :user_id => subject.current_user.id, format: :json
+      expect(response.body).to be_json_eql(tickets.to_json)
     end
   end
 
   describe "GET #index_all" do
-    it "assigns all tickets as @tickets" do
-      ticket = Ticket.create! valid_ticket_attributes
-      get :index, {}
-      expect(assigns(:tickets)).to eq([ticket])
+    it "responds with all tickets as json" do
+      tickets = Ticket.create! all_tickets
+      get "index_all", format: :json
+      expect(response.body).to be_json_eql(tickets.to_json)
     end
   end
 
   describe "POST #create" do
     context "with valid params" do
+      let(:params) {{
+        format: :json,
+        :user_id => subject.current_user.id,
+        :ticket => new_attributes
+      }}
+
       it "creates a new Ticket" do
+        expect(subject.current_user).not_to be_nil
         expect {
-          post :create, {:ticket => valid_ticket_attributes}
+          post :create, params
         }.to change(Ticket, :count).by(1)
       end
 
-      it "assigns a newly created ticket as @ticket" do
-        post :create, {:ticket => valid_ticket_attributes}
+      it "assigns new ticket as @ticket and saves" do
+        expect(subject.current_user).not_to be_nil
+        post :create, params
         expect(assigns(:ticket)).to be_a(Ticket)
         expect(assigns(:ticket)).to be_persisted
       end
 
-      it "redirects to the created ticket" do
-        post :create, {:ticket => valid_ticket_attributes}
-        expect(response).to redirect_to(Ticket.last)
+      it "responds with new ticket as json" do
+        expect(subject.current_user).not_to be_nil
+        post :create, params
+        expect(response.body).to be_json_eql(new_attributes.to_json)
       end
     end
 
+# Currently unable to test with invalid params. At the moment
+# we are not performing any server-side data validation.
+=begin
     context "with invalid params" do
+
+      let(:params) {{
+        format: :json,
+        :user_id => subject.current_user.id,
+        :ticket => invalid_ticket
+      }}
+
       it "assigns a newly created but unsaved ticket as @ticket" do
-        post :create, {:ticket => invalid_attributes}
+        post :create, params
         expect(assigns(:ticket)).to be_a_new(Ticket)
+        expect(assigns(:ticket)).not_to be_persisted
       end
 
       it "re-renders the 'new' template" do
-        post :create, {:ticket => invalid_attributes}
+        post :create, params
         expect(response).to render_template("new")
       end
     end
+=end
   end
 
   describe "PUT #update" do
     context "with valid params" do
-      let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
-      }
+      let(:params) {{
+        format: :json,
+        :user_id => subject.current_user.id,
+        :ticket => new_attributes
+      }}
 
-      it "updates the requested ticket" do
-        ticket = Ticket.create! valid_ticket_attributes
-        put :update, {:id => ticket.to_param, :ticket => new_attributes}
-        ticket.reload
-        skip("Add assertions for updated state")
+      it "assigns updated ticket to @ticket" do
+        expect(subject.current_user).not_to be_nil
+        tickets = Ticket.create! user_tickets
+        params.store(:id, tickets[0].id)
+        put :update, params
+        tickets[0].reload
+        expect(assigns(:ticket)).to include(tickets[0])
       end
 
-      it "assigns the requested ticket as @ticket" do
-        ticket = Ticket.create! valid_ticket_attributes
-        put :update, {:id => ticket.to_param, :ticket => valid_ticket_attributes}
-        expect(assigns(:ticket)).to eq(ticket)
-      end
-
-      it "redirects to the ticket" do
-        ticket = Ticket.create! valid_ticket_attributes
-        put :update, {:id => ticket.to_param, :ticket => valid_ticket_attributes}
-        expect(response).to redirect_to(ticket)
+      it "returns updated ticket as json" do
+        expect(subject.current_user).not_to be_nil
+        tickets = Ticket.create! user_tickets
+        params.store(:id, tickets[0].id)
+        put :update, params
+        expect(response.body).to include_json(new_attributes.to_json)
       end
     end
 
+# Currently unable to test with invalid params. At the moment
+# we are not performing any server-side data validation.
+=begin
     context "with invalid params" do
       it "assigns the ticket as @ticket" do
-        ticket = Ticket.create! valid_ticket_attributes
+        ticket = Ticket.create! user_tickets
         put :update, {:id => ticket.to_param, :ticket => invalid_attributes}
         expect(assigns(:ticket)).to eq(ticket)
       end
 
       it "re-renders the 'edit' template" do
-        ticket = Ticket.create! valid_ticket_attributes
+        ticket = Ticket.create! user_tickets
         put :update, {:id => ticket.to_param, :ticket => invalid_attributes}
         expect(response).to render_template("edit")
       end
     end
+=end
   end
 
   describe "DELETE #destroy" do
+
+    let(:params) {{
+      format: :json,
+      :user_id => subject.current_user.id
+    }}
+
     it "destroys the requested ticket" do
-      ticket = Ticket.create! valid_ticket_attributes
+      expect(subject.current_user).not_to be_nil
+      tickets = Ticket.create! user_tickets
+      params.store(:id, tickets[0].id)
       expect {
-        delete :destroy, {:id => ticket.to_param}
+        delete :destroy, params
       }.to change(Ticket, :count).by(-1)
     end
 
-    it "redirects to the tickets list" do
-      ticket = Ticket.create! valid_ticket_attributes
-      delete :destroy, {:id => ticket.to_param}
-      expect(response).to redirect_to(tickets_url)
+    it "returns all but destroyed ticket" do
+      expect(subject.current_user).not_to be_nil
+      tickets = Ticket.create! user_tickets
+      params.store(:id, tickets[0].id)
+      delete :destroy, params
+      expect(response.body).not_to include_json(user_tickets[0].to_json)
     end
   end
-
-  # Clear the testing db of all entries to avoid conflicting with future testing
-  tickets = Ticket.all
-  for ticket in tickets do
-    ticket.destroy
-  end
-
-  users = User.all
-  for user in users do
-    user.destroy
-  end
-
 end

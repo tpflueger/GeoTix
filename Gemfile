@@ -33,6 +33,12 @@ group :development, :test do
   # RSpec used for server-side unit testing
   gem 'rspec-rails'
 
+  # Additional tools for testing JSON in RSpec
+  gem 'json_spec'
+
+  # Tool for cleaning test db between individual tests
+  gem 'database_cleaner'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
