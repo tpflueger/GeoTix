@@ -136,4 +136,40 @@
       }
     }
   }
+
+  &.search {
+    .ui {
+      &.header {
+        width: 300px;
+      }
+
+      &.table {
+        width: 325px;
+      }
+    }
+
+    table {
+      thead {
+        th {
+          font-size: 14px;
+          font-weight: bold;
+
+          &.title {
+            width: 220px;
+          }
+        }
+      }
+
+      tbody {
+        td {
+          font-size: 14px;
+
+          &.title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
 }
