@@ -38,10 +38,12 @@
                 controller: 'ProfileController',
                 views: {
                     'panel@': {
-                        templateUrl: 'panel/user/_panel.user.tickets.html'
+                        templateUrl: 'panel/user/_panel.user.tickets.html',
+                        controller: 'UserTicketsController'
                     },
                     'panel': {
-                        templateUrl: 'panel/user/_panel.user.tickets.html'
+                        templateUrl: 'panel/user/_panel.user.tickets.html',
+                        controller: 'UserTicketsController'
                     }
                 },
                 data: {
