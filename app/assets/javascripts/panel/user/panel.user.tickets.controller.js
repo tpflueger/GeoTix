@@ -6,9 +6,9 @@
   app.controller('UserTicketsController', ['$scope', 'TicketService', userTicketsController]);
 
   function userTicketsController($scope, ticketService) {
-    $scope.delete = function(ticket) {
-      ticketService.deleteUserTicket($scope.user.id, ticket.id);
-      _.remove($scope.userTickets, { id: ticket.id });
+    $scope.delete = function(ticketId) {
+      ticketService.deleteUserTicket($scope.user.id, ticketId);
+      _.remove($scope.userTickets, { id: ticketId });
     };
   };
 })();
