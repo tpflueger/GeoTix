@@ -1,0 +1,38 @@
+<div class="container pusher">
+    <div class="ui inverted menu navbar">
+        <a class="item" ng-click="openSidebar()">
+            <i class="content icon" ng-click="openSidebar"></i>
+        </a>
+        <div class="ui dropdown item" dropdown>
+            <i class="dropdown icon"></i>
+            Profile
+            <div class="menu">
+                <a class="item" href="#/home">Home</a>
+                <a class="item" ng-hide="signedIn()" ng-click="openLogin('login')">Log In</a>
+                <a class="item" ng-hide="signedIn()" ng-click="openLogin()">Register</a>
+                <a class="item" ng-show="signedIn()" href="#/profile">{{ user.username }}</a>
+                <a class="item" ng-show="signedIn()" ng-click="logout()">Log Out</a>
+            </div>
+        </div>
+    </div>
+    <form class="ui form">
+      <h1 class="ui dividing header" style="padding-left: 44%">Update Profile</h1>
+      <div class="container" style="padding-left: 37%">
+        <div class="field" style="width: 453px">
+          <label>Email</label>
+          <input type="email" placeholder = "{{ user.email }}" class="form-control" ng-model="newInfo.email">
+        </div>
+        <div class="field" style="width: 453px">
+          <label>Username</label>
+          <input type="text" class="form-control" placeholder= "{{user.username}}" ng-model="newInfo.username">
+        </div>
+        <div class="field" style="width: 453px">
+          <label>New Password</label>
+          <input type="password" class="form-control" placeholder="New Password" ng-model="newInfo.encrypted_password">
+        </div>
+        <div class="field action">
+          <input type="submit" class="ui button" value="Update" ng-click="update()">
+        </div>
+      </div>
+    </form>
+</div>

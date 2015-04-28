@@ -24,7 +24,7 @@
                 <a class="item" href="#/home">Home</a>
                 <a class="item" ng-hide="signedIn()" ng-click="openLogin('login')">Log In</a>
                 <a class="item" ng-hide="signedIn()" ng-click="openLogin()">Register</a>
-                <a class="item" ng-show="signedIn()">{{ user.username }}</a>
+                <a class="item" ng-show="signedIn()" href="#/profile">{{ user.username }}</a>
                 <a class="item" ng-show="signedIn()" ng-click="logout()">Log Out</a>
             </div>
         </div>

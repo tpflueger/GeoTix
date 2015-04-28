@@ -23,6 +23,6 @@ class UsersController < ApplicationController
   # Define user parameters that can be accepted from the client
   private
   def user_params
-    params.require(:user).permit(:username, :email, :encyrpted_password)
+    params.require(:user).permit(:username, :email, :encrypted_password)
   end
 end

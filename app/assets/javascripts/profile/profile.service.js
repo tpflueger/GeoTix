@@ -20,6 +20,19 @@
       return deferred.promise;
     }
 
+    function updatePassword(password){
+      var url =['users',password, 'edit.json'].join('/'),
+        deferred = $q.defer();
+
+        $http.patch(url, password).success(function(data){
+          deferred.resolve(data);
+        }, function(error){
+          deferred.reject(error);
+        });
+
+        return deferred.promise;
+    }
+
     function deleteProfile(userId) {
       var url = ['users', userId, 'destroy.json'].join('/'),
         deferred = $q.defer();
