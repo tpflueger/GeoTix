@@ -7,10 +7,8 @@
 
   function userTicketsController($scope, ticketService) {
     $scope.delete = function(ticket) {
-      console.log("before: " + $scope.userTickets.length);
       ticketService.deleteUserTicket($scope.user.id, ticket.id);
-      $scope.userTickets = _.without($scope.userTickets, [ticket]);
-      console.log("after: " + $scope.userTickets.length);
+      _.remove($scope.userTickets, { id: ticket.id });
     };
   };
 })();
