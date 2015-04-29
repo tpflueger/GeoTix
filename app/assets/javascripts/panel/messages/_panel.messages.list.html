@@ -1,0 +1,13 @@
+<div class="panel conversation flex column center-horizontal align-top">
+    <h2 class="ui dividing teal header margin-double-top margin-bottom flex align-middle">
+        Messages
+    </h2>
+    <div class="pos-absolute margin-double">
+        <div ng-repeat="conversation in conversations" class="item conversation" ui-sref="home.message-details({ conversationId: {{conversation.id}} })" ng-hide="hasNoMessages(conversation)">
+            <div class="flex full-width list">
+                <div class="flex column item-top full-width center-vertical">{{getOtherUser(conversation)}}</div>
+                <div class="flex column item-bottom full-width center-vertical">{{mostRecentMessage(conversation) | date: 'MM/dd'}}</div>
+            </div>
+        </div>
+    </div>
+</div>

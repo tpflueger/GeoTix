@@ -26,11 +26,6 @@
                 },
                 data: {
                     active: 'search'
-                },
-                resolve: {
-                    setContext: function(ContextService) {
-                        return ContextService.clearContext();
-                    }
                 }
             })
             .state('home.tickets', {
@@ -46,11 +41,6 @@
                 },
                 data: {
                     active: 'tickets'
-                },
-                resolve: {
-                    setContext: function(ContextService) {
-                        return ContextService.clearContext();
-                    }
                 }
             })
             .state('home.tickets-create', {
@@ -63,11 +53,6 @@
                     'panel': {
                         templateUrl: 'panel/create/_panel.tickets.create.html',
                         controller: 'TicketCreateController'
-                    }
-                },
-                resolve: {
-                    setContext: function(ContextService) {
-                        return ContextService.clearContext();
                     }
                 }
             })
@@ -85,10 +70,34 @@
                 },
                 data: {
                     active: 'ticket-details'
+                }
+            })
+            .state('home.messages', {
+                url: '/conversations',
+                views: {
+                    'panel@': {
+                        templateUrl: 'panel/messages/_panel.messages.list.html',
+                        controller: 'MessageListController'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/messages/_panel.messages.list.html',
+                        controller: 'MessageListController'
+                    }
                 },
-                resolve: {
-                    setContext: function(ContextService) {
-                        return ContextService.setContext('ticketDetails');
+                data: {
+                    active: 'messages'
+                }
+            })
+            .state('home.message-details', {
+                url: '/conversations/:conversationId',
+                views: {
+                    'panel@': {
+                        templateUrl: 'panel/messages/_panel.messages.details.html',
+                        controller: 'MessageDetailsController'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/messages/_panel.messages.details.html',
+                        controller: 'MessageDetailsController'
                     }
                 }
             })

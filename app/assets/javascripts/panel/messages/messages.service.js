@@ -7,11 +7,11 @@
 
 	function messageService($http, $q) {
 
-		function createConversation (senderId, recipientId) {
+		function createConversation (converesation) {
 			var url = ['conversations'].join('/'),
 				deferred = $q.defer();
 
-			$http.post(url, {sender_id: senderId, recipient_id: recipientId}).success(function(data) {
+			$http.post(url, converesation).success(function(data) {
 				deferred.resolve(data);
 			}, function(error) {
 				deferred.reject(error);
@@ -33,7 +33,7 @@
 			return deferred.promise;
 		}
 
-		function getMesssages(convoId) {
+		function getMessages(convoId) {
 			var url = ['conversations', convoId, 'messages'].join('/'),
 				deferred = $q.defer();
 
@@ -75,7 +75,7 @@
 		return {
 			createConversation: createConversation,
 			getConversations: getConversations,
-			getMesssages: getMesssages,
+			getMessages: getMessages,
 			sendMessage: sendMessage,
 			updateMessage: updateMessage
 		}

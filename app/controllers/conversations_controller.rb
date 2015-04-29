@@ -23,7 +23,7 @@ class ConversationsController < ApplicationController
 
   private
   def conversation_params
-    params.permit(:sender_id, :recipient_id)
+    params.permit(:sender_id, :recipient_id, :sender_name, :recipient_name)
   end
 
   def interlocutor(conversation)
