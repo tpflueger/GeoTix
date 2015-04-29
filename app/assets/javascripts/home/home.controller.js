@@ -15,10 +15,7 @@
 
     $scope.$on('devise:login', function () {
       ticketService.getUserTickets($scope.user.id).then(function(userTickets) {
-        $scope.userTickets = userTickets || [];
-        _.remove($scope.allTickets, function(ticket) {
-          return _.find($scope.userTickets, { id: ticket.id });
-        });
+        $rootScope.userTickets = userTickets || [];
       }, function(error) {
         console.log(error);
       });
@@ -50,6 +47,11 @@
 
 
     (function refreshPosition() {
+      ticketService.getTickets().then(function(tickets) {
+        $rootScope.allTickets = tickets || [];
+      }, function(error) {
+        console.log(error);
+      });
         positionService.getCurrentPosition().then(function(userPos) {
           $scope.userCircle = userPos;
         });
@@ -58,11 +60,10 @@
 
     function initialization() {
       ticketService.getTickets().then(function(tickets) {
-        $scope.allTickets = tickets || [];
+        $rootScope.allTickets = tickets || [];
       }, function(error) {
         console.log(error);
       });
-
       positionService.getMapPosition().then(function(position) {
         $scope.map.center.latitude = position.coords.latitude;
         $scope.map.center.longitude = position.coords.longitude;

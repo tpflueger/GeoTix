@@ -14,7 +14,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="ticket in allTickets | filter:search">
+            <tr ng-repeat="ticket in allTickets | filter:search" ng-hide="ticket.user_id === user.id">
                 <td ui-sref="home.ticket-details({ticket_id:ticket.id})" class="title">{{ticket.title}}</td>
                 <td>{{ticket.created_at | date: 'shortDate'}}</td>
             </tr>
