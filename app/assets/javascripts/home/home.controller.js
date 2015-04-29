@@ -48,7 +48,9 @@
 
     (function refreshPosition() {
       ticketService.getTickets().then(function(tickets) {
-        $rootScope.allTickets = tickets || [];
+        if($rootScope.allTickets && $rootScope.allTickets.length !== tickets.length) {
+          $rootScope.allTickets = tickets || [];
+        }
       }, function(error) {
         console.log(error);
       });
@@ -60,7 +62,9 @@
 
     function initialization() {
       ticketService.getTickets().then(function(tickets) {
-        $rootScope.allTickets = tickets || [];
+        if($rootScope.allTickets && $rootScope.allTickets.length !== tickets.length) {
+          $rootScope.allTickets = tickets || [];
+        }
       }, function(error) {
         console.log(error);
       });
