@@ -33,10 +33,12 @@
                 controller: 'ProfileController',
                 views: {
                     'panel@': {
-                        templateUrl: 'panel/user/_panel.user.tickets.html'
+                        templateUrl: 'panel/user/_panel.user.tickets.html',
+                        controller: 'UserTicketsController'
                     },
                     'panel': {
-                        templateUrl: 'panel/user/_panel.user.tickets.html'
+                        templateUrl: 'panel/user/_panel.user.tickets.html',
+                        controller: 'UserTicketsController'
                     }
                 },
                 data: {
@@ -56,11 +58,48 @@
                     }
                 }
             })
-            .state('home.ticket', {
-                url: '/tickets/:ticketId',
+            .state('home.ticket-details', {
+                url: '/tickets/:ticket_id',
                 views: {
-                    'panel@home': {
-                        templateUrl: 'auth/_login.html'
+                    'panel@': {
+                        templateUrl: 'panel/details/_panel.ticket.details.html',
+                        controller: 'TicketDetailsController'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/details/_panel.ticket.details.html',
+                        controller: 'TicketDetailsController'
+                    }
+                },
+                data: {
+                    active: 'ticket-details'
+                }
+            })
+            .state('home.messages', {
+                url: '/conversations',
+                views: {
+                    'panel@': {
+                        templateUrl: 'panel/messages/_panel.messages.list.html',
+                        controller: 'MessageListController'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/messages/_panel.messages.list.html',
+                        controller: 'MessageListController'
+                    }
+                },
+                data: {
+                    active: 'messages'
+                }
+            })
+            .state('home.message-details', {
+                url: '/conversations/:conversationId',
+                views: {
+                    'panel@': {
+                        templateUrl: 'panel/messages/_panel.messages.details.html',
+                        controller: 'MessageDetailsController'
+                    },
+                    'panel': {
+                        templateUrl: 'panel/messages/_panel.messages.details.html',
+                        controller: 'MessageDetailsController'
                     }
                 }
             })

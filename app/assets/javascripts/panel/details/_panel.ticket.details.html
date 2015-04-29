@@ -1,0 +1,27 @@
+<div class="panel details flex column center-horizontal align-top">
+  <h2 class="ui dividing teal header margin-double-top margin-bottom flex align-middle">
+    Ticket Details
+  </h2>
+
+  <div class="ui left aligned top attached tertiary segment margin-double-top">
+    <p class="title padding-double">{{ticket.title}}</p>
+  </div>
+
+  <div class="ui left aligned attached segment" ng-show="ticket.description != null">
+    <p class="description padding-double">{{ticket.description}}</p>
+  </div>
+  <div class="ui left aligned attached segment" ng-show="ticket.description == null">
+    <p class="no-description padding-double">No description available...</p>
+  </div>
+
+  <div class="ui left aligned bottom attached secondary segment margin-bottom">
+    <p class="date-posted padding-double">Posted:  {{ticket.created_at | date: 'longDate'}}</p>
+  </div>
+
+  <div class="margin-double-top">
+    <button class="ui red icon button" ng-click="goto(ticket)">
+      View <i class="external icon" />
+    </button>
+    <button ng-hide="isUserTicket" class="ui red icon button" ng-click="sendMessage()">Send Message</button>
+  </div>
+</div>

@@ -18,3 +18,8 @@ rake bower:install - install client-side dependencies
 rake db:create - create local DB
 
 rake db:migrate - migrate any changes to local DB
+
+== Testing:
+run bundle install to get all required gems
+
+bundle exec rspec - run rspec tests (located in /spec)

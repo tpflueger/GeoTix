@@ -8,7 +8,7 @@
     function ticketService ($http, $q) {
 
         function getTickets() {
-            var url = ['tickets.json'].join('/'),
+            var url = ['tickets'].join('/'),
                 deferred = $q.defer();
 
             $http.get(url).success(function(data) {
@@ -21,7 +21,7 @@
         }
 
         function getUserTickets (userId) {
-            var url = ['users', userId, 'tickets.json'].join('/'),
+            var url = ['users', userId, 'tickets'].join('/'),
                 deferred = $q.defer();
 
             $http.get(url).success(function(data) {
@@ -35,7 +35,7 @@
 
         function updateUserTicket(userId, ticketId, ticket) {
             // http://localhost:3000/users/:userId/tickets/:ticketId.json
-            var url = ['users', userId, 'tickets', ticketId + '.json'].join('/'),
+            var url = ['users', userId, 'tickets', ticketId].join('/'),
                 deferred = $q.defer();
 
             $http.put(url, ticket).success(function(data) {
@@ -49,7 +49,7 @@
 
         function deleteUserTicket(userId, ticketId) {
             // http://localhost:3000/users/:/userId/tickets/:ticketId.json
-            var url = ['users', userId, 'tickets', ticketId + '.json'].join('/'),
+            var url = ['users', userId, 'tickets', ticketId].join('/'),
                 deferred = $q.defer();
 
             $http.delete(url).success(function(data) {
@@ -62,7 +62,7 @@
         }
 
         function createUserTicket(userId, ticket) {
-            var url = ['users', userId, 'tickets.json'].join('/'),
+            var url = ['users', userId, 'tickets'].join('/'),
                 deferred = $q.defer();
 
             // Request with object.

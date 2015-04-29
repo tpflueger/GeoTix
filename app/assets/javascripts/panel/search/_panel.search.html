@@ -1,1 +1,24 @@
-<h1>Hello</h1>
+<div class="panel tickets flex column center-horizontal align-top">
+    <h2 class="ui dividing teal header margin-double-top margin-bottom flex align-middle">
+        Tickets
+    </h2>
+    <form class="ui form flex align-middle full-width">
+        <input class="full-width margin-double-right margin-double-left" type="text" placeholder="Find dat ticket" ng-model="search"/>
+    </form>
+    <div class="pos-absolute margin-double">
+        <table class="ui table">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date Posted</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="ticket in allTickets | filter:search">
+                <td ui-sref="home.ticket-details({ticket_id:ticket.id})" class="title">{{ticket.title}}</td>
+                <td>{{ticket.created_at | date: 'shortDate'}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

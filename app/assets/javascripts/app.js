@@ -3,12 +3,13 @@
 
   var app = angular.module('geotix', ['ui.router', 'templates', 'Devise', 'ngDialog', 'uiGmapgoogle-maps']);
 
-  app.run(['$rootScope', 'Auth', '$state', 'LoginService', controller]);
+  app.run(['$rootScope', 'Auth', '$state', 'LoginService', 'ContextService', controller]);
 
-  function controller($rootScope, Auth, $state, loginService) {
+  function controller($rootScope, Auth, $state, loginService, contextService) {
     $rootScope.$state = $state;
     $rootScope.loginTry = true;
     $rootScope.registerTry = false;
+    $rootScope.contextService =  contextService;
 
     $rootScope.signedIn = Auth.isAuthenticated;
     $rootScope.logout = Auth.logout;
@@ -18,6 +19,7 @@
     });
 
     $rootScope.$on('devise:unauthorized', function(event, xhr, deferred) {
+      $state.go('home.search');
       loginService.openDialog();
     });
 
@@ -31,6 +33,7 @@
 
     $rootScope.$on('devise:logout', function (e, user){
       $rootScope.user = {};
+      $state.go('home.search');
     });
 
     $rootScope.openLogin = function (modal) {
@@ -43,5 +46,13 @@
       }
       loginService.openDialog();
     };
+
+    $rootScope.previousState;
+    $rootScope.currentState;
+    $rootScope.$on('$stateChangeSuccess', function(ev, to, toParams, from, fromParams) {
+      $rootScope.previousState = from.name;
+      $rootScope.currentState = to.name;
+      contextService.setContext($rootScope.currentState);
+    });
   }
 })();

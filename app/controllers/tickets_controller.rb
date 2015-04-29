@@ -41,6 +41,6 @@ class TicketsController < ApplicationController
   # Define ticket parameters that can be accepted from the client
   private
   def ticket_params
-    params.require(:ticket).permit(:title, :description, :lat, :long, :is_active)
+    params.require(:ticket).permit(:title, :description, :lat, :long, :is_active, :username)
   end
 end
