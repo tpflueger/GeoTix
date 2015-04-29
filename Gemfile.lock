@@ -191,6 +191,7 @@ DEPENDENCIES
   devise (~> 3.4.0)
   jbuilder (~> 2.0)
   json_spec
+  non-stupid-digest-assets
   pg
   rails (= 4.2.0)
   rspec-rails
