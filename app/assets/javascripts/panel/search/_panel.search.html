@@ -1,29 +1,11 @@
-<div class="panel search flex column center-horizontal align-top">
-  <h2 class="ui dividing teal header margin-double-top margin-bottom flex align-middle">
-    Search for Tickets
-  </h2>
-
-  <div class="ui search margin-double-top">
-    <div class="ui icon input">
-      <input class="prompt" type="text" ng-model="searchString" placeholder="Search keywords..." />
-      <i class="search icon"></i>
-    </div>
+<div class="container" ng-controller="search">
+  <div class="ui left icon input">
+    <input type="text" placeholder="Search" ng-model="searchTitle">
   </div>
-
-  <div class="margin-double-top">
-    <table class="ui table">
-      <thead>
-        <tr>
-          <th class="title">Title</th>
-          <th>Date Posted</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="ticket in allTickets">
-          <td class="title" ui-sref="home.ticket-details({ticket_id:ticket.id})" class="title">{{ticket.title}}</td>
-          <td>{{ticket.created_at | date: 'shortDate'}}</td>
-        </tr>
-      </tbody>
-    </table>
+  <div ng-repeat="ticket in allTickets | filter: searchTitle" >
+    <div class="item" style="color: white;">
+      <span style="font-size: 14px;"> {{ticket.title}} </span>
+    </div>
+    <hr/>
   </div>
 </div>
