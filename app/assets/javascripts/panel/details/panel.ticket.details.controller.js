@@ -7,19 +7,15 @@
 
   function ticketDetailsController($scope, $timeout, messageService) {
 
-    $scope.$watch('userTickets', function (newValue, oldValue) {
-      $scope.ticketId = parseInt($scope.$state.params.ticket_id, 10);
-      if(_.find($scope.userTickets, { id: $scope.ticketId})) {
-        $scope.ticket = _.find($scope.userTickets, {id: $scope.ticketId});
-        $scope.isUserTicket = true;
-      }
-    });
-
     $scope.$watch('allTickets', function (newValue, oldValue) {
       $scope.ticketId = parseInt($scope.$state.params.ticket_id, 10);
       if(_.find($scope.allTickets, { id: $scope.ticketId})) {
         $scope.ticket = _.find($scope.allTickets, {id: $scope.ticketId});
-        $scope.isUserTicket = false;
+        if($scope.ticket.user_id === $scope.user.id) {
+          $scope.isUserTicket = true;
+        } else {
+          $scope.isUserTicket = false;
+        }
       }
     });
 

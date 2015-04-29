@@ -14,7 +14,7 @@
 		});
 
 		$scope.getOtherUser = function (conversation) {
-			if(conversation.sender_name = $scope.user.username) {
+			if(conversation.sender_name === $scope.user.username) {
 				return conversation.recipient_name;
 			} else {
 				return conversation.sender_name;
