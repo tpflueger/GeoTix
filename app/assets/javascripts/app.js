@@ -19,6 +19,7 @@
     });
 
     $rootScope.$on('devise:unauthorized', function(event, xhr, deferred) {
+      $state.go('home.search');
       loginService.openDialog();
     });
 
@@ -32,6 +33,7 @@
 
     $rootScope.$on('devise:logout', function (e, user){
       $rootScope.user = {};
+      $state.go('home.search');
     });
 
     $rootScope.openLogin = function (modal) {
@@ -50,6 +52,7 @@
     $rootScope.$on('$stateChangeSuccess', function(ev, to, toParams, from, fromParams) {
       $rootScope.previousState = from.name;
       $rootScope.currentState = to.name;
+      contextService.setContext($rootScope.currentState);
     });
   }
 })();

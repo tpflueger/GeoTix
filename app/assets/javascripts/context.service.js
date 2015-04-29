@@ -11,13 +11,18 @@
 				url: ''
 			};
 
-		function setContext (name) {
-			if($rootScope.previousState === 'home.ticket-details' || name === 'ticketDetails') {
+		function setContext () {
+			if($rootScope.previousState === 'home.tickets' && $rootScope.currentState === 'home.ticket-details') {
 				context.url = 'home.tickets';
 				contextList.push(context);
-			} else if($rootScope.previousState === 'home.search') {
+			} else if($rootScope.previousState === 'home.search' && $rootScope.currentState === 'home.ticket-details') {
 				context.url = 'home.search';
 				contextList.push(context);
+			} else if($rootScope.previousState === 'home.messages' && $rootScope.currentState === 'home.message-details') {
+				context.url = 'home.messages';
+				contextList.push(context);
+			} else {
+				clearContext();
 			}
 		}
 

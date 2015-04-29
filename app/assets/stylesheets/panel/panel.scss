@@ -7,7 +7,7 @@
     &.menu {
 
       &.vertical {
-        width: 300px !important;
+        width: 350px !important;
       }
 
 
@@ -96,6 +96,87 @@
 
     .date-posted {
       font-size: 13px;
+    }
+  }
+
+  &.messages {
+    .message {
+      height: 80%;
+      overflow: auto;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .send-message {
+      bottom: 0px;
+    }
+  }
+
+  &.conversation {
+    .ui {
+      &.header {
+        width: 325px;
+      }
+
+      &.table {
+        width: 325px;
+        table-layout: fixed;
+      }
+    }
+
+    .pos-absolute {
+      overflow: auto;
+      height: 90%;
+      width: 90%;
+    }
+
+    .list {
+      height: 50px;
+      font-size: 1.5em;
+    }
+  }
+
+  &.tickets {
+    .ui {
+      &.header {
+        width: 325px;
+      }
+
+      &.table {
+        width: 325px;
+        table-layout: fixed;
+      }
+    }
+
+    .pos-absolute {
+      overflow: auto;
+      height: 80%;
+    }
+
+    table {
+      thead {
+        th {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+
+      tbody {
+        td {
+          font-size: 14px;
+
+          &.title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
     }
   }
 

@@ -3,10 +3,10 @@
 
   var app = angular.module('geotix');
 
-  app.controller('HomeController', ['$scope', '$timeout', 'TicketService', 'PositionService', homeController]);
+  app.controller('HomeController', ['$rootScope', '$scope', '$timeout', 'TicketService', 'PositionService', 'MessageService', homeController]);
 
-  function homeController($scope, $timeout, ticketService, positionService) {
-
+  function homeController($rootScope, $scope, $timeout, ticketService, positionService, messageService) {
+    $rootScope.allMessages = {};
     $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 
     $scope.openSidebar = function () {
@@ -22,7 +22,32 @@
       }, function(error) {
         console.log(error);
       });
+
+      (function getMessagesAndConversations() {
+        messageService.getConversations().then(function(convos) {
+          $rootScope.conversations = convos;
+        }).catch(function(error) {
+
+        });
+
+        var conversationIds = _($scope.conversations).pluck('id').value();
+
+        _.forEach(conversationIds, function (value) {
+
+          messageService.getMessages(value).then(function(messageList) {
+
+          $rootScope.allMessages[value] = messageList;
+
+          }).catch(function(error) {
+
+          });
+
+        });
+        $scope.promiseMessages = $timeout(getMessagesAndConversations, 1000);
+      })();
     });
+
+
 
     (function refreshPosition() {
         positionService.getCurrentPosition().then(function(userPos) {
@@ -49,6 +74,18 @@
         }, 0);
       });
     }
+
+    $scope.getTicket = function(ticket, name) {
+      $scope.openSidebar();
+      if(name === 'allTickets') {
+        $scope.$apply(function () {
+          $scope.$state.go('home.search');
+        });
+      } else {
+        $scope.$state.go('home.tickets');
+      }
+      $scope.$state.go('home.ticket-details', { ticket_id: ticket.id});
+    };
 
     initialization();
   }
